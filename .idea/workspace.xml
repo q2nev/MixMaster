@@ -8,8 +8,8 @@
     <file path="/ascii_animation.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380684866990" ignored="false" />
     <file path="/music.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685427592" ignored="false" />
     <file path="/thread_practice.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685083699" ignored="false" />
-    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380735202000" ignored="false" />
-    <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380736244915" ignored="false" />
+    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380739607335" ignored="false" />
+    <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380737016121" ignored="false" />
     <file path="/hipsterdom.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380735769218" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game_play.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game_play.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_play.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="602" column="52" selection-start="20199" selection-end="20199" vertical-scroll-proportion="0.57591623">
+            <state line="402" column="66" selection-start="13963" selection-end="13963" vertical-scroll-proportion="-11.62963">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -41,11 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="951" column="12" selection-start="36323" selection-end="36323" vertical-scroll-proportion="-21.407408">
-              <folding />
+            <state line="295" column="19" selection-start="11266" selection-end="11266" vertical-scroll-proportion="0.78381795">
+              <folding>
+                <element signature="tag#stop#0;tag#game#0" expanded="false" />
+                <element signature="tag#stop#3;tag#game#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,10 +126,10 @@
         <option value="$PROJECT_DIR$/thread_practice.py" />
         <option value="$PROJECT_DIR$/music.py" />
         <option value="$PROJECT_DIR$/moving_ascii.xml" />
-        <option value="$PROJECT_DIR$/game.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/hipsterdom.py" />
         <option value="$PROJECT_DIR$/game_play.py" />
+        <option value="$PROJECT_DIR$/game.xml" />
       </list>
     </option>
   </component>
@@ -388,7 +391,10 @@
     <entry file="file://$PROJECT_DIR$/game.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="179" column="29" selection-start="7192" selection-end="7192" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="tag#stop#0;tag#game#0" expanded="false" />
+            <element signature="tag#stop#3;tag#game#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -463,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="951" column="12" selection-start="36323" selection-end="36323" vertical-scroll-proportion="-21.407408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
@@ -488,9 +487,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game_play.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="602" column="52" selection-start="20199" selection-end="20199" vertical-scroll-proportion="0.57591623">
+        <state line="402" column="66" selection-start="13963" selection-end="13963" vertical-scroll-proportion="-11.62963">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="295" column="19" selection-start="11266" selection-end="11266" vertical-scroll-proportion="0.78381795">
+          <folding>
+            <element signature="tag#stop#0;tag#game#0" expanded="false" />
+            <element signature="tag#stop#3;tag#game#0" expanded="false" />
           </folding>
         </state>
       </provider>

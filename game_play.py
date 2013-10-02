@@ -79,8 +79,6 @@ def describe(stop,extras):
     if extras:
         if 'stop_name' in extras:
             print stop.attrs["nomen"].upper(), "STATION"
-        if 'badascii' in extras:
-            nomen = extras['badascii']
 
         if 'stop_desc' in extras:
             print stop.desc[desc_ct].value
@@ -104,6 +102,21 @@ def describe(stop,extras):
         if 'results' in extras:
             print "After that game you have",rhymes, "rhymes, and",ats,"Ats."
             print "You also have", followers,"Followers."
+        if 'inventory' in extras:
+            print "Rhymes:", rhymes
+            print "__________________________________________________________"
+            print "Ats:",ats
+            print "__________________________________________________________"
+            for itm in g_map.player[0].item:
+                print str(itm.attrs["nomen"]).upper()
+                print "Uses:"
+                try:
+                    for use in itm.usage:
+                        print use.attrs["nomen"]
+                except:
+                    print "No uses..."
+            print "__________________________________________________________"
+
         if 'unknown' in extras:
             print "We don't know what you're talkin' about."
     return stop
@@ -251,16 +264,7 @@ def process_command(stop, command): #can also pass stop!
         elif verb == "score": #score board functionality
             return score_command(stop)
         elif verb =="cur":
-            print "rhymes:", rhymes
-            print "Ats:",ats
-            for itm in g_map.player[0].item:
-                print itm.attrs["nomen"]
-                try:
-                    print "Uses:"
-                    for use in itm.usage:
-                        print use.attrs["nomen"]
-                except:
-                    print "No uses..."
+            extras=["inventory"]
             return stop
         elif verb=="save":
             return save_command(stop)
@@ -598,7 +602,8 @@ def ascii_challenge(stop):
     logging.debug("Image Text:",img_txt) #log image text for debugging
     play_ascii(stop)
     boss = str(stop.attrs["kw"]).strip(string.whitespace)
-    if img_txt not in image_folder:
+
+    if img_txt not in image_folder: #convert image to txt file if not already.
         print "Converting jpg to txt!"
         ascii_string = ASC.image_diff('images/'+img)
         print type(ascii_string)

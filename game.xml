@@ -1,5 +1,5 @@
 <game>
-    <player stop="start" hashes="20" ats="20" hollers="2" lifelines="10">
+    <player stop="start" rhymes="20" ats="20" hollers="2" lifelines="10">
         <item nomen="how" access="">
             <desc>
        -"describe around" will describe the things that you can touch currently on your stop.
@@ -99,7 +99,7 @@
 
              and try to steal your reputation (also called holler-ats or @s)
 
-                and stash (also called hashes, hashtags and #s), but fear not!
+                and stash (also called rhymes, hashtags and #s), but fear not!
 
                 You're a mean muggin' thug, and you know the Twittersphere.
         </desc>
@@ -211,7 +211,6 @@
             </desc>
         </item>
     </stop>
-
     <stop nomen="parkchester" im="dmx.jpg" sd="canudigit.ogg" access="">
         <desc>
             This is our first subway station. Welcome to the Bronx! bitch.
@@ -221,7 +220,7 @@
 
         </desc>
         <place nomen="tracks" dir="now" link="tracks" fights="true" im="rat.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+            <desc>
                 It's dangerous down on the tracks. Dead bodies. Rats.
             </desc>
             <desc nomen="" >
@@ -302,24 +301,22 @@
             </desc>
         </item>
     </stop>
-
-
-    <stop nomen="3av" dir="off" link="express" im="" sd="" access="">
-        <desc nomen="3av" dir="off">
+    <stop nomen="3av" im="" sd="" access="">
+        <desc>
             You're at the 3rd Avenue Station.
         </desc>
-        <desc nomen="3av" dir="off">
+        <desc>
             You can get back on the
         </desc>
         <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+            <desc>
                 It's dangerous down on the tracks. Dead bodies. Rats.
             </desc>
             <desc>
-                You can always
+                You can always hang on the tracks.
             </desc>
         </place>
-        <place nomen="local" dir="ahead" link="local" fights="true" im="" sd="" access="cost,1,1">
+        <place nomen="local" dir="ahead" link="local2" fights="true" im="" sd="" access="cost,1,1">
             <desc nomen="local" dir="ahead" fights="true">
                 The Local six train is here!
             </desc>
@@ -327,7 +324,7 @@
 
             </desc>
         </place>
-        <place nomen="express" dir="behind" link="express"  fights="true" im="" sd="" access="cost,1,1">
+        <place nomen="express" dir="behind" link="express2"  fights="true" im="" sd="" access="cost,1,1">
             <desc nomen="express" dir="behind" fights="true">
                 The Express Six Train is here!
             </desc>
@@ -337,7 +334,9 @@
         </place>
         <item nomen="pimp" dir="corner" fights="true">
             <desc>
-                There's a man the looks a lot like a pimp in
+
+                There's a man the looks a lot like a pimp here.
+
             </desc>
             <desc>
 
@@ -533,7 +532,7 @@
 
         </item>
     </stop>
-    <stop nomen="tracks" link="" fights="true">
+    <stop nomen="tracks"  fights="true">
         <desc nomen="tracks">
             Welcome to the land of the free! You have joined a gang of rebel warriors!
         </desc>
@@ -547,7 +546,7 @@
         <desc nomen="express">
             You're on 6 express!
         </desc>
-        <place nomen ="huntspoint" dir= "off" fights="true" access="">
+        <place nomen ="huntspoint" link="huntspoint" dir= "off" fights="true" access="cost,1,1">
             <desc>
 
             </desc>
@@ -567,17 +566,44 @@
     <stop nomen="huntspoint" fights="true" >
         <desc nomen="huntspoint" link="">
 
+            The neighborhood is part of Bronx Community Board 2.
+
+            Its boundaries are the Bruckner Expressway to the west and north,
+
+            the Bronx River to the east (I bet they have some fresh fish there),
+
+            and the East River to the south.
+
+        </desc>
+        <desc>
+
+            Hunts Point Avenue is the primary street through Hunts Point.
+
+            The neighborhood is considered to be a "Red Light District"
+
+            in many cases for its crime and prostitution
+
         </desc>
         <place nomen="chicken" dir="ground" fights="true" access="">
             <desc>
 
             </desc>
         </place>
-        <place nomen="express2" fights="false" access="">
+        <place nomen="express2" fights="challenge" access="">
             <desc>
 
             </desc>
         </place>
+        <item nomen="prostitute" fights="true" kw="">
+            <desc>
+
+            </desc>
+        </item>
+        <item nomen="pimp" fights="true" kw="">
+            <desc>
+
+            </desc>
+        </item>
     </stop>
     <stop nomen="3av" fights="true">
         <desc nomen="3av" link="">
@@ -657,33 +683,33 @@
             You better move on, because this sucker is all rhymed up.
 
     </scenario>
-    <scenario ats="equal" hashes="equal" sd="">
+    <scenario ats="equal" rhymes="equal" sd="">
 
             It's a draw!
             Somethings are better left unsaid, player.
             You best dry your eyes.
 
     </scenario>
-    <scenario ats="equal" hashes="player" sd="">
+    <scenario ats="equal" rhymes="player" sd="">
 
             You smoked them out and grabbed some of their hash!
             We're rich bitch!
 
     </scenario>
-    <scenario ats="player" hashes="boss" sd="">
+    <scenario ats="player" rhymes="boss" sd="">
 
             You out hollered them. You mad tweeter, you!
             But they did smoke you out and nab some of your stash!
 
     </scenario>
-    <scenario ats="player" hashes="equal" sd="">
+    <scenario ats="player" rhymes="equal" sd="">
 
             You sly mother. You beat that turkey!
             And gained some followers from his crew!
             Holler at it baby!!
 
     </scenario>
-    <scenario ats="player" hashes="player" sd="">
+    <scenario ats="player" rhymes="player" sd="">
 
             You hollered so hard that you added some holler to your crew!
             Feel that beat get loose in you!
