@@ -581,7 +581,56 @@ def parse(cmd):
     noun = translate_noun.get(noun, noun)
     return verb, noun
 
-
+def ascii_challenge(stop):
+    '''
+    separate image_to_ascii function to have guessing game.
+    image_folder: where the images are stored
+    (All images need to have 3-letter formats a.k.a. .jpegs won't work)
+    img: string from stop.attrs
+    img_txt: possible text string that would've already been generated
+    '''
+    global rhymes
+    global ats
+    global current_sound
+    image_folder = os.listdir('images/')
+    img = str(stop.attrs["im"]).strip(string.whitespace)
+    img_txt = img[:-4]+'.txt'
+    logging.debug("Image Text:",img_txt) #log image text for debugging
+    play_ascii(stop)
+    boss = str(stop.attrs["kw"]).strip(string.whitespace)
+    if img_txt not in image_folder:
+        print "Converting jpg to txt!"
+        ascii_string = ASC.image_diff('images/'+img)
+        print type(ascii_string)
+        fin = open('images/'+img_txt,'w')
+        print "file opened"
+        for i in range(len(ascii_string)):
+            fin.write(ascii_string[i]+'\t')
+        fin.close()
+    with open('images/'+img_txt) as f:
+        lines = f.read()
+        print "Guess ascii by pressing enter!"
+        for l in lines.split('\t'):
+            while not msvcrt.kbhit():
+                time.sleep(1.2)
+                break
+            print l
+            while msvcrt.kbhit():
+                current_sound.stop()
+                msvcrt.getch()
+                print "_________________________________________________________________"
+                print "What's your guess?"
+                print boss
+                boss_guess = raw_input(">>")
+                if boss_guess == boss:
+                    current_sound.play()
+                    print "You guessed right! Here are 5 hashes and ats for your prowess!"
+                    rhymes += 5
+                    ats += 5
+                    return rhymes, ats
+                else:
+                    play_music(stop,False)
+    return rhymes,ats
 
 translate_verb = {"g" : "go","go" : "go","walk" : "go","jump" : "go",
                   "t" : "take", "take" : "take","grab" : "take","get":"take",

@@ -12,7 +12,6 @@ Files:
 =>ascii_animation:
     ->
 
-=>Add music
 =>Add Command prompt from threading example transfer
 
 =>Complete a large part of the map

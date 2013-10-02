@@ -102,3 +102,8 @@ def play_ascii(stop, pause_sound=False):
     except:
         print "No music found"
 
+if __name__ == "__main__":
+    try:
+        ascii_challenge(stop)
+    except:
+        print "no hipsterdom here."
