@@ -52,7 +52,7 @@ def main():
     player = g_map.player[0]
     # initialize extras - list of printable items
     global extras
-    extras = ['stop_desc','stop_name','sound']
+    extras = ['stop_desc','stop_name','play_music']
     logging.info('Entering main() game loop')
     os.system('cls')
     # enter main game loop
@@ -88,12 +88,9 @@ def describe(stop,extras):
             image_to_ascii(stop,False)
         if 'ascii_w_sound' in extras:
             image_to_ascii(stop,True)
-        if 'switch_sound' in extras:
-            play_music(True)
-
-        if 'pause_sound' in extras:
+        if 'pause_music' in extras:
             play_music(stop,True)
-        if 'sound' in extras:
+        if 'play_music' in extras:
             play_music(stop)
         if 'around' in extras:
             for p in stop.place:
@@ -141,14 +138,14 @@ def image_to_ascii(stop,pause_sound=False, guess_name=False):
             fin.write(ascii_string[i]+'\t')
         fin.close()
 
-def play_music(stop, pause_sound=False,play_new=True):
+def play_music(stop, pause_sound=False):
     '''
     pause most recent sound before passing in new sound for current_sound (global variable)
     '''
     global current_sound
 
-    if pause_sound:
-        current_sound.pause()
+    if current_sound and pause_sound:
+        current_sound.stop()
 
     try:
         sound_file = "sounds/"+str(stop.attrs["sd"]).strip(string.whitespace)
@@ -159,7 +156,7 @@ def play_music(stop, pause_sound=False,play_new=True):
     except:
         print "No music found"
 
-def twitter_data(stop,noun):
+def twitter_data(stop,boss, noun):
     '''
     call_prompt: users input keyword
     rhyme_diff: difference in rhymes for a RT boss
@@ -169,9 +166,9 @@ def twitter_data(stop,noun):
     '''
     global rhymes
     global ats
-    print "It's a glare from",noun
+    print "It's a glare from",noun,"with call:",boss
     call_prompt = raw_input("What's your call against this mean muggin?!")
-    rhyme_diff, at_diff = twitter_battle(call_prompt,noun)
+    rhyme_diff, at_diff = twitter_battle(call_prompt,boss)
     rhymes += rhyme_diff
     ats += at_diff
     if rhymes <0 or ats<0: #breaks if either returns zero
@@ -224,7 +221,9 @@ def process_command(stop, command): #can also pass stop!
     1. Parse Command
     2. Get Items and places from Command
     3. Handles Twitter Battle
-    - Twitter Game play : if desc or stop, or item contains name in fight dict.
+    4. Twitter Game play : if desc or stop, or item contains name in fight dict.
+
+    Output: global extras and global stop.
     '''
     global desc_ct
     global finds
@@ -319,27 +318,27 @@ def go_command(stop,noun):
                     print 'You have a',access, 'To gain access to this stop use it? Use your',access,'?'
                     access_q = raw_input('>>')
                     if access_q.lower() == "y":
-                        extras =['stop_name','stop_desc','pause_music']
+                        extras =['stop_name','stop_desc','pause_music','play_music']
                         desc_ct=0
-                        extras =['stop_name','stop_desc','pause_music']
+
                         link = pl.attrs["link"]
                         stop = stops[link]
                         return stop
                     else:
                         print "Well, then you can't go there."
+                        extras =['stop_name','stop_desc']
                         return stop
                 elif access == "": #if there is no access key in the xml then leave it and let them go.
                     desc_ct = 0
-                    extras =['stop_name','stop_desc','pause_music']
+                    extras =['stop_name','stop_desc','pause_music','play_music']
                     link = pl.attrs["link"]
                     stop = stops[link]
                     return stop
             print "Well then I guess you'll just have to find another way!"
             return stop
 
-
-        else:
-            print "This is no place."
+        # else:
+        #     print "This is no place."
     else:
         extras=["bad_go"]
         print "You can't go there."
@@ -357,8 +356,8 @@ def take_command(stop,noun):
             print type(access)
             if itm.attrs.get("nomen") == noun:
                 if access.split(',')[0] =='cost':
-                    rhymes_cost= access[1]
-                    ats_cost = access[2]
+                    rhymes_cost= int(access[1])
+                    ats_cost = int(access[2])
                     print "Do you want to pay for this?"
                     print rhymes_cost,"rhymes"
                     print ats_cost,"Ats"
@@ -391,12 +390,11 @@ def describe_command(stop, player, noun):
     if noun == "around": #functionality to show current landscape.
         extras = ["around"]
         return stop
-
     for itm in stop.item:
         if itm.attrs["nomen"] == noun:
             boss= itm.attrs.get("kw")
             if itm.attrs["fights"]:
-                rhymes, ats = twitter_data(stop,boss)
+                rhymes, ats = twitter_data(stop,boss, noun)
                 extras= ["rhymes", "ats", "battle_results"]
                 print "You now have", rhymes,"rhymes in your rep!"
                 print "And",ats, "holler-ats from the crowd!"
@@ -494,28 +492,26 @@ def score_command(stop):
 
 def load_command(stop):
     games = os.listdir("save")
-    if len(games)>1:
-        for i, file_name in enumerate(games): #prints the players to console
-            if file_name.split(".")[1]=='.xml':
-                print str(i) + "\t" + file_name.split(".")[0]
 
-        print "Choose a game by its number, or type new for new game.\n"
-        choice = raw_input(">>")
-        if choice not in ["N", "n", "new", "NEW"]:
-            try:
-                game_file = "save\\" + games[int(choice)]
-            except:
-                print "You didn't give a proper number..."
-                game_file = 'game.xml'
+    for i, file_name in enumerate(games): #prints the players to console
+        if file_name.split(".")[1]=='.xml':
+            print str(i) + "\t" + file_name.split(".")[0]
+
+            print "Choose a game by its number, or type new for new game.\n"
+            choice = raw_input(">>")
+            if choice not in ["N", "n", "new", "NEW"]:
+                try:
+                    game_file = "save\\" + games[int(choice)]
+                except:
+                    print "You didn't give a proper number..."
+                    game_file = 'game.xml'
+            else:
+                return stop
         else:
+            print "\n\t\tCould not find any saved games!"
+            print "\n\t\tType start or exit!"
+            #game_file = 'game.xml'
             return stop
-            #game_file = "game.xml"
-
-    else:
-        print "\n\t\tCould not find any saved games!"
-        print "\n\t\tType start or exit!"
-        #game_file = 'game.xml'
-        return stop
 
     return load_game(game_file)
 
@@ -525,31 +521,22 @@ def load_game(game_file):
     Output: stop object from player profile.
 
     '''
+    global g_map
     logging.info('Found load_game')
     with open(game_file) as f:
         xml_file = f.read()
     #wrap player map here
-    success, p_map = game.obj_wrapper(xml_file)
+    success, g_map = game.obj_wrapper(xml_file)
     if not success:
         logging.info('From Q2API - Obj_wrapper failed when loading game')
         exit()
     global player #only need player from file
     global stops #grab dict from main file so that we can call current stop from nomen attribute
 
-    player = p_map.player[0] #assign player via Q2API.xml.mk_class syntax
+    player = g_map.player[0] #assign player via Q2API.xml.mk_class syntax
     nomen = player.attrs["stop"] #grab stop from player's xml file and return for game play
     stop = stops[nomen]
 
-    for itm in player.item: #constructs finds dict from loaded player.
-        if itm.attrs["finds"]=='true':
-
-            boss_kw = itm.attrs["boss_kw"]
-            logging.info('User has item:'+boss_kw)
-            ats = str(itm.value).split(',')[0].strip() #returns ats from unicode
-            rhymes = str(itm.value).split(',')[1].strip() #returns rhymes from unicode
-            finds[boss_kw] = ats,rhymes
-        else:
-            logging.info('No item found')
     logging.info('Leaving load_game')
     return stop
 
