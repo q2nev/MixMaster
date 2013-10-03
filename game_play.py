@@ -9,7 +9,6 @@ import pygame.mixer as mix
 import string
 import sys
 import Q2logging
-from hipsterdom import *
 
 mix.init()
 logging.basicConfig(filename='game_play.log',logging=logging.DEBUG)
@@ -39,6 +38,8 @@ def main():
         stops[nomen] = stop
 
     stop = g_map.stop[0] #inital stop
+
+    print_animation(stop)
     # initialize player
     global player
     player = g_map.player[0]
@@ -172,21 +173,26 @@ def twitter_data(stop,boss, noun):
     global ats
     print "It's a glare from",noun,"with call:",boss
     call_prompt = raw_input("What's your call against this mean muggin?!")
-    rhyme_diff, at_diff = twitter_battle(call_prompt,boss)
-    rhymes += rhyme_diff
-    ats += at_diff
-    if rhymes <0 or ats<0: #breaks if either returns zero
-        print "You're as dead as a doornail."
-        print "Would you like to restart?"
-        restart = raw_input(">>")
-        while True:
-            if restart =="Y":
-                return main()
-            elif restart == "N":
-                exit()
-            else:
-                print "Unknown command"
-                continue
+    try:
+        rhyme_diff, at_diff = twitter_battle(call_prompt,boss)
+        rhymes += rhyme_diff
+        ats += at_diff
+        if rhymes <0 or ats<0: #breaks if either returns zero
+            print "You're as dead as a doornail."
+            print "Would you like to restart?"
+            restart = raw_input(">>")
+            while True:
+                if restart =="Y":
+                    return main()
+                elif restart == "N":
+                    exit()
+                else:
+                    print "Unknown command"
+                    continue
+    except:
+        print "You have over exerted Twitter!"
+        ascii_challenge(stop)
+        exit()
     return rhymes,ats #returns to
 
 def twitter_battle(call_prompt, boss): # add on followers and amt later
@@ -334,7 +340,7 @@ def ascii_challenge(stop):
     img = str(stop.attrs["im"]).strip(string.whitespace)
     img_txt = img[:-4]+'.txt'
     logging.debug("Image Text:",img_txt) #log image text for debugging
-    play_ascii(stop)
+    play_music(stop)
     boss = str(stop.attrs["kw"]).strip(string.whitespace)
 
     if img_txt not in image_folder: #convert image to txt file if not already.
@@ -378,16 +384,42 @@ def go_command(stop,noun):
     for pl in stop.place:
         if noun in pl.attrs.get("nomen"):
             access = str(pl.attrs["access"])
+            if access.split(',')[0] == "cost":
+                rhymes_cost= int(access.split(',')[1])
+                ats_cost = int(access.split(',')[2])
+                print "Do you want to pay for this? (y/n)?"
+                print rhymes_cost,"rhymes"
+                print ats_cost,"Ats"
+                pay_cost = raw_input('>>')
+                if pay_cost.lower() == 'y':
+                    rhymes -= rhymes_cost
+                    ats -= ats_cost
+                    try:
+                        link = pl.attrs["link"]
+                        if link =="":
+                            print "Link empty"
+                            exit()
+                        stop = stops[link]
+                        extras=["stop_name",'stop_describe','pause_music','play_music']
+                    except:
+                        print "There is not a link here."
+                    return stop
+                else:
+                    print "Well that's ok?"
             for itm in player.item:
                 if str(itm.attrs['nomen'])==access:
-                    print 'You have a',access, 'To gain access to this stop use it? Use your',access,'?'
+                    print '\t\t\n\nYou have a',access, 'To gain access to this stop. Use your',access,'?'
                     access_q = raw_input('>>')
                     if access_q.lower() == "y":
                         extras =['stop_name','stop_desc','pause_music','play_music']
                         desc_ct=0
-
-                        link = pl.attrs["link"]
-                        stop = stops[link]
+                        try:
+                            link = pl.attrs["link"]
+                            if link =="":
+                                exit()
+                            stop = stops[link]
+                        except:
+                            print "There is not a link here."
                         return stop
                     else:
                         print "Well, then you can't go there."
@@ -396,10 +428,19 @@ def go_command(stop,noun):
                 elif access == "": #if there is no access key in the xml then leave it and let them go.
                     desc_ct = 0
                     extras =['stop_name','stop_desc','pause_music','play_music']
-                    link = pl.attrs["link"]
-                    stop = stops[link]
+                    try:
+                        link = pl.attrs["link"]
+                        if link =="":
+                            print "exiting at place and empty string access"
+                            exit()
+                        stop = stops[link]
+                    except:
+                        print "No link found."
                     return stop
-            print "Well then I guess you'll just have to find another way!"
+
+            print "\n\t\tYou don't currently have the items necessary to go this way."
+            print "\n\t\t Try to find this item or try another way!"
+            print "\n\t\tWell then I guess you'll just have to find another way!"
             return stop
 
         # else:
@@ -423,7 +464,7 @@ def take_command(stop,noun):
                 if access.split(',')[0] =='cost':
                     rhymes_cost= int(access[1])
                     ats_cost = int(access[2])
-                    print "Do you want to pay for this?"
+                    print "Do you want to pay for this? (y/n)?"
                     print rhymes_cost,"rhymes"
                     print ats_cost,"Ats"
                     pay_cost = raw_input('>>')
@@ -474,8 +515,8 @@ def describe_command(stop, player, noun):
                 extras=["ascii_game"]
                 return stop
 
-    for itm in player.item:
-        if noun == itm.attrs.get("nomen"):
+    for it in player.item:
+        if noun == it.attrs.get("nomen"):
             print "You already Twitter Battled the", noun
         extras = ['describe_place','describe_access']
         return stop
@@ -629,17 +670,17 @@ def load_ats_rhymes(game_file):
     return ats,rhymes
 
 def print_animation(stop):
+    print
+    stop_nomen = stop.attrs["nomen"]
     ims = dict()
+    pts = dict()
+    ct=0
     for i in g_map.ascii[0].im:
         nomen = i.attrs["nomen"]
-        ims[nomen] = i
-    im_name = stop.attrs["im"]
-    ct =0
-    i = ims[im_name]
-    pts = dict()
-    for pt in i.part:
-        pts[ct]=pt
-        ct+=1
+        if stop_nomen == nomen:
+            for pt in i.part:
+                pts[ct]=pt
+                ct+=1
     ct=0
     while ct in pts:
         print pts[ct].value

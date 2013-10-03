@@ -17,6 +17,14 @@ Files:
 
 TO DO:
 
+?=>add in extras for linking through cost options
+
+
+?=>"key error in im" might want to change those in ascii_challenge function
+
+=>make scenarios rap/mc related
+=>need kw in stop if itm can have challenge possiblity (aka there is a fights=true option)
+
 =>Add Command prompt from threading example transfer
 
 =>Complete a large part of the map
