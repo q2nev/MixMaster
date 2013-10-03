@@ -419,18 +419,18 @@
 
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" access="">
+        <item nomen="sweaty man" kw="hairy" fights="" access="">
             <desc>
 
             </desc>
         </item>
-        <item nomen="ak" access="cost,1,1">
+        <item nomen="ak" kw="gun" fights="" access="cost,1,1">
             <desc>
                 Even when you lose, it feels good to win!
             </desc>
         </item>
     </stop>
-    <stop nomen="3av" im="chicken.jpg" sd="breakyaneck.ogg" access="">
+    <stop nomen="3av" im="dmx.jpg" sd="breakyaneck.ogg" access="">
         <desc>
          ______          __   _______
         |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
@@ -455,27 +455,21 @@
             <desc nomen="express" dir="behind" fights="true">
                 The Express Six Train is here!
             </desc>
-            <desc>
-                You need at least 25 @s to get on the train.
-            </desc>
         </place>
-        <item nomen="pimp" dir="corner" fights="true">
+        <item nomen="pimp" dir="corner" fights="true" kw="death">
             <desc>
 
                 There's a man the looks a lot like a pimp here.
 
             </desc>
-            <desc>
-
-            </desc>
         </item>
-        <item nomen="dmx" im="" sd="" access="">
+        <item nomen="dmx" kw="" fights="challenge" im="" sd="" access="">
             <desc>
 
             </desc>
         </item>
     </stop>
-    <stop nomen="express3" im="chicken.jpg" sd="breakyaneck.ogg">
+    <stop nomen="express3" im="chicken.jpg" sd="breakyaneck.ogg" kw="busta">
         <desc nomen="express3" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)

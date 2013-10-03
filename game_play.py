@@ -195,7 +195,6 @@ def twitter_data(stop,boss, noun):
     except:
         print "You have over exerted Twitter!"
         ascii_challenge(stop)
-        exit()
     return rhymes,ats #returns to
 
 def twitter_battle(call_prompt, boss): # add on followers and amt later
@@ -336,14 +335,13 @@ def ascii_challenge(stop):
     '''
     global rhymes
     global ats
-    global current_sound
+    play_music(stop,True) #pauses music
     image_folder = os.listdir('images/')
     img = str(stop.attrs["im"]).strip(string.whitespace)
     img_txt = img[:-4]+'.txt'
     logging.debug("Image Text:",img_txt) #log image text for debugging
     play_music(stop)
     boss = str(stop.attrs["kw"]).strip(string.whitespace)
-
     if img_txt not in image_folder: #convert image to txt file if not already.
         print "Converting jpg to txt!"
         ascii_string = ASC.image_diff('images/'+img)
@@ -358,23 +356,25 @@ def ascii_challenge(stop):
         for l in lines.split('\t'):
             while not msvcrt.kbhit():
                 time.sleep(1.2)
+                print l
                 break
-            print l
+
             while msvcrt.kbhit():
-                current_sound.stop()
+                play_music(stop,True)
                 msvcrt.getch()
                 print "_________________________________________________________________"
                 print "What's your guess?"
                 print boss
                 boss_guess = raw_input(">>")
                 if boss_guess == boss:
-                    current_sound.play()
+                    play_music(stop)
                     print "You guessed right! Here are 5 hashes and ats for your prowess!"
                     rhymes += 5
                     ats += 5
                     return rhymes, ats
                 else:
-                    play_music(stop,False)
+                    print "You guessed wrong!"
+                    play_music(stop)
     return rhymes,ats
 
 def go_command(stop,noun):
