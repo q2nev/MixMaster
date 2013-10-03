@@ -8,7 +8,7 @@
     <file path="/ascii_animation.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380759244949" ignored="false" />
     <file path="/music.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685427592" ignored="false" />
     <file path="/thread_practice.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685083699" ignored="false" />
-    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380823698914" ignored="false" />
+    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380825717602" ignored="false" />
     <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380811921380" ignored="false" />
     <file path="/hipsterdom.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380735769218" ignored="false" />
     <file path="/commands.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380756694267" ignored="false" />
@@ -45,7 +45,7 @@
       <file leaf-file-name="game.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="981" column="52" selection-start="34165" selection-end="34165" vertical-scroll-proportion="0.6017699">
+            <state line="700" column="32" selection-start="24807" selection-end="24807" vertical-scroll-proportion="11.369153">
               <folding />
             </state>
           </provider>
@@ -470,7 +470,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="981" column="52" selection-start="34165" selection-end="34165" vertical-scroll-proportion="0.6017699">
+        <state line="700" column="32" selection-start="24807" selection-end="24807" vertical-scroll-proportion="11.369153">
           <folding />
         </state>
       </provider>

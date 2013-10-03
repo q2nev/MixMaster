@@ -287,7 +287,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express" fights="true">
+    <stop nomen="express" sd="logic.ogg" fights="true">
         <desc nomen="express">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -697,7 +697,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express7">
+    <stop nomen="express7" sd="caveman.ogg">
         <desc nomen="express7" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -733,8 +733,18 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="bleeker street" im="" sd="" access="">
+    <stop nomen="bleeker street" im="" sd="feels.ogg" access="">
         <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
+
+
+      Bleecker Street is a west-east street in New York City borough of Manhattan.
+
+       It is most famous today as a Greenwich Village nightclub district.
+
+   The street connects a neighborhood today popular for music venues and comedy,
+
+           but which was once a major center for American bohemia.
+
 
         </desc>
         <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
@@ -1021,7 +1031,7 @@
 
             </desc>
         </place>
-        <place nomen="express11" dir="on" link="express11"  fights="true" kw="express" im="" sd="" access="">
+        <place nomen="express11" dir="on" link="suburbs"  fights="true" kw="express" im="" sd="" access="">
             <desc >
                 The Express Six Train is here!
             </desc>
@@ -1038,7 +1048,34 @@
 
     </stop>
     <stop nomen="barclays">
+        <desc >
 
+        </desc>
+        <desc >
+
+        </desc>
+        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
+            <desc nomen="tracks" dir="now" fights="true">
+                It's dangerous down on the tracks. Dead bodies. Rats.
+            </desc>
+            <desc>
+
+            </desc>
+        </place>
+        <place nomen="express11" dir="on" link="suburbs"  fights="true" kw="express" im="" sd="" access="">
+            <desc >
+                The Express Six Train is here!
+            </desc>
+            <desc>
+                If you get off, you gotta fight to get back on!
+            </desc>
+        </place>
+        <place nomen="barclays" link="barclays">
+            <desc>
+
+            </desc>
+
+        </place>
     </stop>
     <stop nomen="tracks"  fights="true">
         <desc nomen="tracks">
@@ -2353,6 +2390,80 @@
        8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+
+        </part>
+    </im>
+    <im nomen="3rd avenue">
+        <part>
+                                 ______          __   _______
+                                |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
+                                |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |  -__|
+                                |______||__| |_____| |___|___| \___/|_____|__|__|_____|_____|
+
+        </part>
+        <part>
+                                         ______          __   _______
+                                        |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.
+                                        |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |
+                                        |______||__| |_____| |___|___| \___/|_____|__|__|_____|
+
+        </part>
+        <part>
+                                             ______          __   _______
+                                            |__    |.----.--|  | |   _   |.--.--.-----.-----.
+                                            |__    ||   _|  _  | |       ||  |  |  -__|     |
+                                            |______||__| |_____| |___|___| \___/|_____|__|__|
+
+        </part>
+        <part>
+                                                     ______          __   _______
+                                                    |__    |.----.--|  | |   _   |.--.--.-----.
+                                                    |__    ||   _|  _  | |       ||  |  |  -__|
+                                                    |______||__| |_____| |___|___| \___/|_____|
+
+        </part>
+        <part>
+                                                         ______          __   _______
+                                                        |__    |.----.--|  | |   _   |.--.--.
+                                                        |__    ||   _|  _  | |       ||  |  |
+                                                        |______||__| |_____| |___|___| \___/
+
+        </part>
+        <part>
+                                                             ______          __   _______
+                                                            |__    |.----.--|  | |   _   |
+                                                            |__    ||   _|  _  | |       |
+                                                            |______||__| |_____| |___|___|
+
+        </part>
+        <part>
+                                                                 ______          __
+                                                                |__    |.----.--|  |
+                                                                |__    ||   _|  _  |
+                                                                |______||__| |_____|
+
+        </part>
+        <part>
+                                                                     ______          __
+                                                                    |__    |.----.--|  |
+                                                                    |__    ||   _|  _  |
+                                                                    |______||__| |_____|
+
+        </part>
+        <part>
+
+                                                                             ______
+                                                                            |__    |.----.
+                                                                            |__    ||   _|
+                                                                            |______||__|
+
+
+        </part>
+        <part>
+                                                                                 ______
+                                                                                |__    |
+                                                                                |__    |
+                                                                                |______|
 
         </part>
     </im>
