@@ -305,8 +305,6 @@ def enter_command(stop,descs):
     extras = ['stop_desc']
     return stop
 
-
-
 def descs_dict(stop): #can also pass place and will have same result
     descs = dict()
     desc_ct = 0
@@ -317,7 +315,7 @@ def descs_dict(stop): #can also pass place and will have same result
 
 def parse(cmd):
     cmd = one_word_cmds.get(cmd, cmd)
-    print cmd
+    print "\n\n\n\n\t\t\tMost recent command:", cmd, "\n\n"
     words = cmd.split()
     verb = words[0]
     verb = translate_verb.get(verb, "BAD_VERB")
@@ -545,13 +543,13 @@ def restart_command():
         print "Unrecognized command, I'll just let you keep playing!"
 
 def save_command(stop):
+    global ats
+    global rhymes
     stop_nomen = stop.attrs["nomen"]
     player.attrs["stop"] = str(stop_nomen)
-    player.attrs["rhymes"] = rhymes
-    player.attrs["ats"]= ats
-    # player.attrs["followers"] = followers
-
-    save_file = raw_input("enter a name for the save file>")
+    player.attrs["rhymes"] = str(rhymes)
+    player.attrs["ats"]= str(ats)
+    save_file = raw_input("\t\t\tEnter a name for the save file >")
     with open("save\\" + save_file + ".xml", "w+") as f:
         f.write(g_map.flatten_self())
         print "game saved!"
@@ -564,6 +562,7 @@ def save_command(stop):
         exit()
     else:
         print "Unrecognized noun, I'll just let you keep playing!"
+        return stop
 
 def score_command(stop):
     games = os.listdir("save")
@@ -652,8 +651,6 @@ def load_ats_rhymes(game_file):
 
     '''
     logging.info('Found load_ats_rhymes')
-    global ats
-    global rhymes
     with open('save/'+game_file) as f:
         xml_file = f.read()
 
