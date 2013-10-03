@@ -277,26 +277,26 @@
         <desc>
 
         </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="rat.jpg" sd="green_eyes.ogg" access="">
+        <place nomen="tracks" dir="now" link="tracks" access="">
             <desc>
                 It's dangerous down on the tracks. Dead bodies. Rats.
             </desc>
         </place>
-        <place nomen="express" dir="behind" link="express"  fights="true" im="" sd="" access="">
+        <place nomen="express" dir="behind" link="express" access="cost,1,1">
             <desc nomen="express" dir="behind" fights="true">
                 The Express Six Train is here!
             </desc>
         </place>
-        <place nomen="outside" dir="up" link="outside" fights="true" im="" sd="" access="">
+        <place nomen="outside" dir="up" link="outside" access="">
             <desc nomen="endgame" dir="up" fights="true" >
                 Death by driveby.
             </desc>
         </place>
-        <place nomen="bum" dir="left" link="bum" fights="true" kw="dirty" im="bearded_bum.jpg" sd="" access="">
+        <item nomen="bum" dir="left" link="bum" fights="true" kw="dirty" im="bearded_bum.jpg" sd="" access="">
             <desc nomen="bum" dir="left" link="bum" fights="true" im="bearded_bum.jpg" sd="" access="">
                        There's a smelly bum.
             </desc>
-        </place>
+        </item>
         <item nomen="chicken" kw="fried" dir="down" fights="true" im="" sd="" access="">
             <desc nomen="chicken" dir="down" fights="true">
                 Kennedy's Fried Chicken.
@@ -308,7 +308,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express" im="cadillac.jpg" sd="logic.ogg" fights="true">
+    <stop nomen="express" im="cadillac.jpg" kw="fast" sd="logic.ogg" fights="true">
         <desc nomen="express">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -318,6 +318,10 @@
         /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
                         You're on the 4,5,6 express!
+        </desc>
+        <desc>
+
+
         </desc>
         <place nomen ="huntspoint" link="huntspoint" dir= "off" fights="true" access="cost,1,1">
             <desc>
@@ -337,7 +341,7 @@
     </stop>
 
     <stop nomen="huntspoint" im="chicken.jpg" sd="pusherman.ogg" kw="curtis">
-        <desc nomen="huntspoint" >
+        <desc>
 
                 ___    _    ___    _     ___    __        ___       __
             \  |   |  / |  |   |  | |    \  |  | (__    __)  )  ____)

@@ -97,9 +97,9 @@ def describe(stop,extras):
             # print "You also have", followers,"Followers."
         if 'inventory' in extras:
             print "Rhymes:", rhymes
-            print "__________________________________________________________"
+            print "\t\t__________________________________________________________"
             print "Ats:",ats
-            print "__________________________________________________________"
+            print "\t\t__________________________________________________________"
             for itm in g_map.player[0].item:
                 print str(itm.attrs["nomen"]).upper()
                 print "Uses:"
@@ -108,7 +108,7 @@ def describe(stop,extras):
                         print use.attrs["nomen"]
                 except:
                     print "No uses..."
-            print "__________________________________________________________"
+            print "\t\t__________________________________________________________"
         if 'ascii_challenge' in extras:
             pass
 
@@ -175,7 +175,7 @@ def twitter_data(stop,boss, noun):
     global rhymes
     global ats
     print "\t\t\tIt's a glare from",noun,"with call:",boss,
-    call_prompt = raw_input("\n\n\t\t\t\tWhat's your call against this mean muggin?!")
+    call_prompt = raw_input("\n\n\t\t\tWhat's your call against this mean muggin?!")
     try:
         rhyme_diff, at_diff = twitter_battle(call_prompt,boss)
         rhymes += rhyme_diff
@@ -388,9 +388,9 @@ def go_command(stop,noun):
             if access.split(',')[0] == "cost":
                 rhymes_cost= int(access.split(',')[1])
                 ats_cost = int(access.split(',')[2])
-                print "Do you want to pay for this? (y/n)?"
-                print rhymes_cost,"rhymes"
-                print ats_cost,"Ats"
+                print "\n\n\t\t\t\tDo you want to pay for this? (y/n)?"
+                print "\t\t\t",rhymes_cost,"rhymes"
+                print "\t\t\t",ats_cost,"Ats"
                 pay_cost = raw_input('>>')
                 if pay_cost.lower() == 'y':
                     rhymes -= rhymes_cost
@@ -402,7 +402,7 @@ def go_command(stop,noun):
                             exit()
                         stop = stops[link]
                         desc_ct = 0
-                        extras=["stop_name",'stop_describe','pause_music','play_music']
+                        extras=["stop_name",'stop_desc','pause_music','play_music']
                     except:
                         print "There is not a link here."
                     return stop
@@ -414,7 +414,7 @@ def go_command(stop,noun):
                     access_q = raw_input('>>')
                     if access_q.lower() == "y":
                         extras =['stop_name','stop_desc','pause_music','play_music']
-                        desc_ct=0
+
                         try:
                             link = pl.attrs["link"]
                             if link =="":
@@ -422,6 +422,7 @@ def go_command(stop,noun):
                             stop = stops[link]
                         except:
                             print "There is not a link here."
+                        desc_ct=0
                         return stop
                     else:
                         print "Well, then you can't go there."
@@ -439,14 +440,10 @@ def go_command(stop,noun):
                     except:
                         print "No link found."
                     return stop
-
             print "\n\t\tYou don't currently have the items necessary to go this way."
             print "\n\t\t Try to find this item or try another way!"
             print "\n\t\tWell then I guess you'll just have to find another way!"
             return stop
-
-        # else:
-        #     print "This is no place."
     else:
         extras=["bad_go"]
         print "You can't go there."
@@ -582,15 +579,8 @@ def score_command(stop):
             except:
                 print "couldn't find scores"
             try:
-                print "Items placeholder:"
-            except:
-                pass
-            try:
-                print "Hollers and Lifelines placeholder:"
-            except:
-                pass
-            try:
-                pass
+                for it in load_items(file_name):
+                    print "Player item:", it
             except:
                 pass
         save_count += 1
@@ -662,12 +652,33 @@ def load_ats_rhymes(game_file):
     if not success:
         print "Failure to wrap object."
         exit()
-    global player #only need player from file
+    #only need player from file
     player = p_map.player[0]
     ats = player.attrs["ats"] #grab stop from player's xml file and return for game play
     rhymes = player.attrs["rhymes"]
     logging.info('Leaving load_ats_rhymes')
     return ats,rhymes
+def load_items(game_file):
+    '''
+    load items and names in list
+    '''
+    logging.info('Found load_ats_rhymes')
+    with open('save/'+game_file) as f:
+        xml_file = f.read()
+
+    success, p_map = game.obj_wrapper(xml_file)
+    #call player map here because we are not altering most of the file.
+    if not success:
+        print "Failure to wrap object."
+        exit()
+    #only need player from file
+    player = p_map.player[0]
+    item_list=[]
+    for it in player.item:
+        item_list.append(it.attrs["nomen"])
+
+    logging.info('Leaving load_items')
+    return item_list
 
 def print_animation(stop):
     print

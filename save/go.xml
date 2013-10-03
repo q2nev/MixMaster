@@ -1,4 +1,4 @@
-<game><player stop="express" followers="10" ats="22" rhymes="21"><item access="" nomen="how"><desc>
+<game><player stop="parkchester" followers="10" ats="25" rhymes="21"><item access="" nomen="how"><desc>
        General Moves that you can make:
 
        -"describe around" will describe the things that you can touch currently on your stop.
@@ -45,6 +45,8 @@
                     Chirp, chirp, chirp!!
                 You think this is food poisoning?
                           Take a bite!
+            </desc></item><item nomen="bum" fights="true" access="" link="bum" im="bearded_bum.jpg" kw="dirty" dir="left" sd=""><desc nomen="bum" fights="true" access="" link="bum" im="bearded_bum.jpg" dir="left" sd="">
+                       There's a smelly bum.
             </desc></item></player><stop access="" nomen="intro" im="chicken.jpg" sd="good_ass_intro.ogg"><desc nomen="intro">
  ****     ****   **  **     **      ****     ****       **       ******** **********  ********  *******
 /**/**   **/**  /** //**   **      /**/**   **/**      ****     **////// /////**///  /**/////  /**////**
@@ -217,15 +219,13 @@
             You can hustle, but you're on the clock!
         </desc><desc>
 
-        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="rat.jpg" dir="now" sd="green_eyes.ogg"><desc>
+        </desc><place access="" nomen="tracks" link="tracks" dir="now"><desc>
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc></place><place nomen="express" fights="true" access="" link="express" im="" dir="behind" sd=""><desc nomen="express" fights="true" dir="behind">
+            </desc></place><place access="" nomen="express" link="express" dir="behind"><desc nomen="express" fights="true" dir="behind">
                 The Express Six Train is here!
-            </desc></place><place nomen="outside" fights="true" access="" link="outside" im="" dir="up" sd=""><desc nomen="endgame" fights="true" dir="up">
+            </desc></place><place access="" nomen="outside" link="outside" dir="up"><desc nomen="endgame" fights="true" dir="up">
                 Death by driveby.
-            </desc></place><place nomen="bum" fights="true" access="" link="bum" im="bearded_bum.jpg" dir="left" sd=""><desc nomen="bum" fights="true" access="" link="bum" im="bearded_bum.jpg" dir="left" sd="">
-                       There's a smelly bum.
-            </desc></place></stop><stop nomen="express" fights="true" sd="logic.ogg"><desc nomen="express">
+            </desc></place></stop><stop nomen="express" fights="true" im="cadillac.jpg" sd="logic.ogg"><desc nomen="express">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -236,11 +236,11 @@
                         You're on the 4,5,6 express!
         </desc><place access="cost,1,1" nomen="huntspoint" fights="true" link="huntspoint" dir="off"><desc>
 
-            </desc></place><place access="" nomen="" fights="true" dir=""><desc>
-
-            </desc></place><place access="" nomen="" dir="" fight="true"><desc>
-
-            </desc></place></stop><stop im="chicken.jpg" nomen="huntspoint" kw="curtis" sd="pusherman.ogg"><desc nomen="huntspoint">
+            </desc></place><item access="" nomen="crips" fights="true" kw="blue" dir=""><desc>
+            They're so fresh... from the crips
+            </desc></item><item access="" nomen="bloods" fights="true" kw="red" dir=""><desc>
+            Gang warfare
+            </desc></item></stop><stop im="chicken.jpg" nomen="huntspoint" kw="curtis" sd="pusherman.ogg"><desc nomen="huntspoint">
 
                 ___    _    ___    _     ___    __        ___       __
             \  |   |  / |  |   |  | |    \  |  | (__    __)  )  ____)
@@ -278,7 +278,7 @@
 
                 There is a pimp with a big old hat.
 
-            </desc></item></stop><stop nomen="express2"><desc nomen="express2">
+            </desc></item></stop><stop nomen="express2" im="chicken.jpg"><desc nomen="express2">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -298,7 +298,7 @@
 
             </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc></item></stop><stop access="" nomen="3av" im="" sd="breakyaneck.ogg"><desc>
+            </desc></item></stop><stop access="" nomen="3av" im="chicken.jpg" sd="breakyaneck.ogg"><desc>
          ______          __   _______
         |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
         |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |  -__|
@@ -324,7 +324,7 @@
 
             </desc></item><item access="" nomen="dmx" im="" sd=""><desc>
 
-            </desc></item></stop><stop nomen="express3"><desc nomen="express3">
+            </desc></item></stop><stop nomen="express3" im="chicken.jpg" sd="breakyaneck.ogg"><desc nomen="express3">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
