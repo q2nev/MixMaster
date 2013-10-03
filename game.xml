@@ -334,7 +334,14 @@
     </stop>
 
     <stop nomen="huntspoint" im="chicken.jpg" sd="pusherman.ogg" kw="curtis">
-        <desc nomen="huntspoint" link="">
+        <desc nomen="huntspoint" >
+
+                ___    _    ___    _     ___    __        ___       __
+            \  |   |  / |  |   |  | |    \  |  | (__    __)  )  ____)
+             |  \_/  |  |  |   |  | |  |\ \ |  |    |  |    (  (___
+             |   _   |  |  |   |  | |  | \ \|  |    |  |     \___  \
+             |  / \  |  |   \_/   | |  |  \    |    |  |     ____)  )
+            /  |___|  \__\       /__|  |___\   |____|  |____(      (__
 
             The neighborhood is part of Bronx Community Board 2.
 
@@ -346,6 +353,7 @@
 
         </desc>
         <desc>
+
 
             Hunts Point Avenue is the primary street through Hunts Point.
 
@@ -364,13 +372,17 @@
                 Express is here.
             </desc>
         </place>
-        <item nomen="prostitute" fights="true" kw="">
+        <item nomen="prostitute" fights="true" kw="whore">
             <desc>
+                Huntspoint is known for their pimps and hos.
 
+                Fo sho....
             </desc>
         </item>
-        <item nomen="pimp" fights="true" kw="">
+        <item nomen="pimp" fights="true" kw="slap">
             <desc>
+
+                There is a pimp with a big old hat.
 
             </desc>
         </item>
@@ -2483,6 +2495,16 @@
                                                                                 |__    |
                                                                                 |______|
 
+        </part>
+    </im>
+    <im nomen="huntspoint">
+        <part>
+    ___    _    ___    _     ___    __        __
+\  |   |  / |  |   |  | |    \  |  | (__    __)
+ |  \_/  |  |  |   |  | |  |\ \ |  |    |  |
+ |   _   |  |  |   |  | |  | \ \|  |    |  |
+ |  / \  |  |   \_/   | |  |  \    |    |  |
+/  |___|  \__\       /__|  |___\   |____|  |____
         </part>
     </im>
 </ascii>

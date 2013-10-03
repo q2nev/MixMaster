@@ -8,8 +8,8 @@
     <file path="/ascii_animation.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380759244949" ignored="false" />
     <file path="/music.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685427592" ignored="false" />
     <file path="/thread_practice.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685083699" ignored="false" />
-    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380827250182" ignored="false" />
-    <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380828134138" ignored="false" />
+    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380829207768" ignored="false" />
+    <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380829122980" ignored="false" />
     <file path="/hipsterdom.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380735769218" ignored="false" />
     <file path="/commands.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380756694267" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game_play.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game_play.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_play.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="589" column="19" selection-start="20729" selection-end="20729" vertical-scroll-proportion="0.26801518">
+            <state line="53" column="41" selection-start="1307" selection-end="1307" vertical-scroll-proportion="-9.740741">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="303" column="38" selection-start="12255" selection-end="12255" vertical-scroll-proportion="-190.77777">
+            <state line="349" column="60" selection-start="14046" selection-end="14046" vertical-scroll-proportion="0.43994942">
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/commands.py" />
         <option value="$PROJECT_DIR$/ascii_animation.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/game.xml" />
         <option value="$PROJECT_DIR$/game_play.py" />
+        <option value="$PROJECT_DIR$/game.xml" />
       </list>
     </option>
   </component>
@@ -452,19 +452,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="303" column="38" selection-start="12255" selection-end="12255" vertical-scroll-proportion="-190.77777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game_play.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="589" column="19" selection-start="20729" selection-end="20729" vertical-scroll-proportion="0.26801518">
+        <state line="53" column="41" selection-start="1307" selection-end="1307" vertical-scroll-proportion="-9.740741">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="349" column="60" selection-start="14046" selection-end="14046" vertical-scroll-proportion="0.43994942">
+          <folding />
         </state>
       </provider>
     </entry>

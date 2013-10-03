@@ -51,7 +51,7 @@ def main():
     # enter main game loop
     while True:
         describe(stop, extras)
-        command = raw_input(">")
+        command = raw_input(">>").lower()
         os.system('cls') #clearing for better user experience
         #put directly after command so we can print on either side and it looks cohesive.
         stop = process_command(stop, command)
@@ -171,8 +171,8 @@ def twitter_data(stop,boss, noun):
     '''
     global rhymes
     global ats
-    print "It's a glare from",noun,"with call:",boss
-    call_prompt = raw_input("What's your call against this mean muggin?!")
+    print "\t\t\tIt's a glare from",noun,"with call:",boss,
+    call_prompt = raw_input("\t\t\t\tWhat's your call against this mean muggin?!")
     try:
         rhyme_diff, at_diff = twitter_battle(call_prompt,boss)
         rhymes += rhyme_diff
@@ -462,9 +462,9 @@ def take_command(stop,noun):
                 if access.split(',')[0] =='cost':
                     rhymes_cost= int(access[1])
                     ats_cost = int(access[2])
-                    print "Do you want to pay for this? (y/n)?"
-                    print rhymes_cost,"rhymes"
-                    print ats_cost,"Ats"
+                    print "\t\t\tDo you want to pay for this? (y/n)?\n\n"
+                    print rhymes_cost,"rhymes.\n\n"
+                    print ats_cost,"Ats\n\n"
                     pay_cost = raw_input('>>')
                     if pay_cost.lower() == 'y':
                         rhymes -= rhymes_cost
@@ -474,14 +474,14 @@ def take_command(stop,noun):
                         stop.item.remove(itm)
                         stop.children.remove(itm)
                     else:
-                        print "Well that's ok?"
-                    print "You get the " + noun
+                        print "\t\t\tWell that's ok?"
+                    print "\t\t\tYou get the " + noun
                 elif access=="":
                     player.item.append(itm)
                     player.children.append(itm)
                     stop.item.remove(itm)
                     stop.children.remove(itm)
-                    print "You get the " + noun
+                    print "\t\t\tYou get the " + noun
         return stop
     except:
         print "This item does not exist at this stop!"
@@ -597,28 +597,27 @@ def score_command(stop):
 
 def load_command(stop):
     games = os.listdir("save")
+    try:
+        for i, file_name in enumerate(games): #prints the players to console
+            if file_name.split(".")[1]=='.xml':
+                print str(i) + "\t" + file_name.split(".")[0]
 
-    for i, file_name in enumerate(games): #prints the players to console
-        if file_name.split(".")[1]=='.xml':
-            print str(i) + "\t" + file_name.split(".")[0]
+        print "Choose a game by its number, or type new for new game.\n"
+        choice = raw_input(">>").lower()
+        if choice not in [ "n", "new"]:
+            try:
+                game_file = "save\\" + games[int(choice)]
 
-            print "Choose a game by its number, or type new for new game.\n"
-            choice = raw_input(">>")
-            if choice not in ["N", "n", "new", "NEW"]:
-                try:
-                    game_file = "save\\" + games[int(choice)]
-                except:
-                    print "You didn't give a proper number..."
-                    game_file = 'game.xml'
-            else:
-                return stop
-        else:
-            print "\n\t\tCould not find any saved games!"
-            print "\n\t\tType start or exit!"
-            #game_file = 'game.xml'
-            return stop
+            except:
+                print "You didn't give a proper number..."
+                game_file = 'game.xml'
+            return load_game(game_file)
+    except:
+        print "\n\t\tCould not find any saved games!"
+        print "\n\t\tType start or exit!"
+        return stop
 
-    return load_game(game_file)
+    return
 
 def load_game(game_file):
     '''
