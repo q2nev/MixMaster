@@ -1,14 +1,11 @@
-<game>
-    <player stop="start" rhymes="20" ats="20" followers="10">
-        <item nomen="how" access="">
-            <desc>
+<game><player stop="express" followers="10" ats="22" rhymes="21"><item access="" nomen="how"><desc>
        General Moves that you can make:
 
        -"describe around" will describe the things that you can touch currently on your stop.
 
        -"describe _____" will tell you more about that item that is near you. But watch out!
 
-           -> By asking to describe an item you could enter a Twitter or Trivia challenge!
+           -&gt; By asking to describe an item you could enter a Twitter or Trivia challenge!
 
        -"current" will relay your inventory of stuff!
 
@@ -26,32 +23,29 @@
          The quickest tongue with the most popularity takes the other's
          holler-ats and hash.
 
-            </desc>
-        </item>
-        <item nomen="gat">
-            <desc>
+            </desc></item><item nomen="gat"><desc>
                 This is your gun, that you might need...
 
                 You know... for reasons.
-            </desc>
-            <usage nomen="show" amt="5">
+            </desc><usage nomen="show" amt="5">
                 Waving your gun around can generally scare off a bitch.
-            </usage>
-            <usage nomen="shoot" amt="5">
+            </usage><usage nomen="shoot" amt="5">
                 Bullets flyin', babies cryin. You sighin. Just another day in the hood G!
-            </usage>
-        </item>
-        <item nomen="dodges" >
-            <usage nomen="duck">
+            </usage></item><item nomen="dodges"><usage nomen="duck">
                 Sometimes, you just gotta dodge people.
-            </usage>
-            <usage nomen="swim">
+            </usage><usage nomen="swim">
                 The best way to get around someone.
-            </usage>
-        </item>
-    </player>
-    <stop nomen="intro" sd="good_ass_intro.ogg" im="chicken.jpg" access="">
-        <desc nomen="intro" >
+            </usage></item><item nomen="ticket" im="" fights="true" access="" kw="nasty" followers="1" dir="" sd=""><desc nomen="ticket" fights="true" challenge="true">
+                There's an old lady reaching for the ticket too!
+            </desc><desc nomen="use" fights="true" challenge="false">
+
+            </desc></item><item nomen="chicken" fights="true" access="" kw="fried" im="" dir="down" sd=""><desc nomen="chicken" fights="true" dir="down">
+                Kennedy's Fried Chicken.
+            </desc><desc>
+                    Chirp, chirp, chirp!!
+                You think this is food poisoning?
+                          Take a bite!
+            </desc></item></player><stop access="" nomen="intro" im="chicken.jpg" sd="good_ass_intro.ogg"><desc nomen="intro">
  ****     ****   **  **     **      ****     ****       **       ******** **********  ********  *******
 /**/**   **/**  /** //**   **      /**/**   **/**      ****     **////// /////**///  /**/////  /**////**
 /**//** ** /**  /**  //** **       /**//** ** /**     **//**   /**           /**     /**       /**   /**
@@ -86,8 +80,7 @@
                               Type LOAD to load previous games.
 
                                Type HELP or HOW for more info!
-        </desc>
-        <desc nomen="intro" >
+        </desc><desc nomen="intro">
 
                 Having a rough, young life in the heart of the Bronx.
 
@@ -101,8 +94,7 @@
 
        Brooklyn on the 4,5,6 train unscathed and with more hash then you started with.
             
-        </desc>
-        <desc nomen ="intro">
+        </desc><desc nomen="intro">
             Along the way, you'll meet some characters who will challenge your wit
 
              and try to steal your reputation (also called holler-ats or @s)
@@ -110,32 +102,28 @@
                 and stash (also called rhymes, hashtags and #s), but fear not!
 
                 You're a mean muggin' thug, and you know the Twittersphere.
-        </desc>
-        <desc>
+        </desc><desc>
             Whenever a person, place or thing decides to give you a glare,
 
           You must challenge the boss with your own gang call and holler-count.
 
             Your holler-count is the amount of defeats you have already
 
-        </desc>
-        <desc nomen="intro">
+        </desc><desc nomen="intro">
         Along the subway, you can decide to trade your life of crime for a life as an MC.
 
             That is the reason the Dom Bros decided to recruit you in the first place.
 
             You've got fly tunes and you know how to spin.
 
-        </desc>
-        <desc nomen="intro" >
+        </desc><desc nomen="intro">
 
                     If you run into another MC on the tracks,
 
                 You can increase your holler-ats by pressing enter
 
         And guessing the currently playing MC before your time expires.
-        </desc>
-        <desc nomen="intro">
+        </desc><desc nomen="intro">
                            As far as the basics:
 
             To learn more about game play type "how" and enter
@@ -152,15 +140,9 @@
 
             Start the game (start) or load (load) a previous game?
 
-        </desc>
-        <place nomen="start" dir="s" link="start" fights="false" access="">
-            <desc nomen="start" dir="s" link="start">
+        </desc><place access="" nomen="start" fights="false" link="start" dir="s"><desc nomen="start" link="start" dir="s">
                 Start the game!!!
-            </desc>
-        </place>
-    </stop>
-    <stop nomen="start" im="chicken.jpg" sd="familyaffair.ogg">
-        <desc nomen="start">
+            </desc></place></stop><stop nomen="start" im="chicken.jpg" sd="familyaffair.ogg"><desc nomen="start">
 
            d888888o. 8888888 8888888888   .8.          8 888888888o. 8888888 8888888888
          .`8888:' `88.     8 8888        .888.         8 8888    `88.      8 8888
@@ -182,8 +164,7 @@
 
                             That is where Jay-Z abides after all.
 
-        </desc>
-        <desc nomen="start">
+        </desc><desc nomen="start">
 
             Are you really that curious to figure more about the start of this game?
 
@@ -191,39 +172,18 @@
 
             There aren't many options here, so choose wisely!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
 
             They pressed enter again... must be pretty desperate at this point....
 
-        </desc>
-        <place nomen="subway" link="parkchester" access="ticket">
-            <desc nomen="subway">
+        </desc><place access="ticket" nomen="subway" link="parkchester"><desc nomen="subway">
                 You need a ticket to get on the subway!!
-            </desc>
-        </place>
-        <place nomen="kiosk" dir="w" link="kiosk" kw="" fights="" challenge="" access="">
-            <desc>
+            </desc></place><place nomen="kiosk" challenge="" fights="" access="" link="kiosk" kw="" dir="w"><desc>
                 You can buy a ticket here...
-            </desc>
-        </place>
-        <place nomen="north" dir="n" link="death" kw="" access="" fights="" challenge="">
-            <desc nomen="north" dir="n">
+            </desc></place><place nomen="north" challenge="" fights="" access="" link="death" kw="" dir="n"><desc nomen="north" dir="n">
                 Run for your life!
-            </desc>
-        </place>
-        <item nomen="ticket" dir="" im="" sd=""  access="" kw="nasty" fights="true" followers="1">
-            <desc nomen="ticket" challenge="true" fights="true">
-                There's an old lady reaching for the ticket too!
-            </desc>
-            <desc nomen="use" challenge="false" fights="true">
-
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="kiosk" sd="pusherman.ogg">
-        <desc>
+            </desc></place></stop><stop nomen="kiosk" sd="pusherman.ogg"><desc>
 
         ____   __    ____     _____     ______  ____  ____
         \   | )  / (_    _)   )   (    )  ____) \   | )  /
@@ -234,37 +194,19 @@
 
 
             This is a kiosk where you can buy a ticket...
-        </desc>
-        <desc>
+        </desc><desc>
             It's a long-line but you can buy a ticket here...
-        </desc>
-        <place nomen="ticket" access="cost,3,1" link="parkchester">
-            <desc nomen="" >
+        </desc><place access="cost,3,1" nomen="ticket" link="parkchester"><desc nomen="">
                 If you buy a ticket at the kiosk, you've got yourself on the train.
-            </desc>
-        </place>
-        <place nomen="start" access="" link="start">
-            <desc>If you just can't handle the kiosk....</desc>
-        </place>
-        <item nomen="attendant" kw="train" fights="true" followers="3">
-            <desc nomen="attendant" fights="true" followers="3">
+            </desc></place><place access="" nomen="start" link="start"><desc>If you just can't handle the kiosk....</desc></place><item kw="train" nomen="attendant" fights="true" followers="3"><desc nomen="attendant" fights="true" followers="3">
                 The Kiosk Attendant wants you to hurry up!
-            </desc>
-            <desc nomen="attendant" fights="true" followers="3">
+            </desc><desc nomen="attendant" fights="true" followers="3">
 
-            </desc>
-        </item>
-        <item nomen="old lady" fights="true" kw="gravy" im="Walt_small.jpg" sd="break_ya_neck.ogg">
-            <desc nomen="old lady" challenge="true" fights="">
+            </desc></item><item kw="gravy" nomen="old lady" fights="true" im="Walt_small.jpg" sd="break_ya_neck.ogg"><desc nomen="old lady" fights="" challenge="true">
                 There's a crotchedy old lady behind you that's waiting for her ticket.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="parkchester" im="dmx.jpg" kw="bling" sd="feels.ogg" access="">
-        <desc>
+            </desc></item></stop><stop access="" im="dmx.jpg" nomen="parkchester" kw="bling" sd="feels.ogg"><desc>
              ____            _        _               _
             |  _ \ __ _ _ __| | _____| |__   ___  ___| |_ ___ _ __
             | |_) / _` | '__| |/ / __| '_ \ / _ \/ __| __/ _ \ '__|
@@ -273,43 +215,17 @@
 
             This is our first subway station. Welcome to the Bronx! bitch.
             You can hustle, but you're on the clock!
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="rat.jpg" sd="green_eyes.ogg" access="">
-            <desc>
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="rat.jpg" dir="now" sd="green_eyes.ogg"><desc>
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-        </place>
-        <place nomen="express" dir="behind" link="express"  fights="true" im="" sd="" access="">
-            <desc nomen="express" dir="behind" fights="true">
+            </desc></place><place nomen="express" fights="true" access="" link="express" im="" dir="behind" sd=""><desc nomen="express" fights="true" dir="behind">
                 The Express Six Train is here!
-            </desc>
-        </place>
-        <place nomen="outside" dir="up" link="outside" fights="true" im="" sd="" access="">
-            <desc nomen="endgame" dir="up" fights="true" >
+            </desc></place><place nomen="outside" fights="true" access="" link="outside" im="" dir="up" sd=""><desc nomen="endgame" fights="true" dir="up">
                 Death by driveby.
-            </desc>
-        </place>
-        <place nomen="bum" dir="left" link="bum" fights="true" kw="dirty" im="bearded_bum.jpg" sd="" access="">
-            <desc nomen="bum" dir="left" link="bum" fights="true" im="bearded_bum.jpg" sd="" access="">
+            </desc></place><place nomen="bum" fights="true" access="" link="bum" im="bearded_bum.jpg" dir="left" sd=""><desc nomen="bum" fights="true" access="" link="bum" im="bearded_bum.jpg" dir="left" sd="">
                        There's a smelly bum.
-            </desc>
-        </place>
-        <item nomen="chicken" kw="fried" dir="down" fights="true" im="" sd="" access="">
-            <desc nomen="chicken" dir="down" fights="true">
-                Kennedy's Fried Chicken.
-            </desc>
-            <desc>
-                    Chirp, chirp, chirp!!
-                You think this is food poisoning?
-                          Take a bite!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="express" im="cadillac.jpg" sd="logic.ogg" fights="true">
-        <desc nomen="express">
+            </desc></place></stop><stop nomen="express" fights="true" sd="logic.ogg"><desc nomen="express">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -318,26 +234,13 @@
         /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
                         You're on the 4,5,6 express!
-        </desc>
-        <place nomen ="huntspoint" link="huntspoint" dir= "off" fights="true" access="cost,1,1">
-            <desc>
+        </desc><place access="cost,1,1" nomen="huntspoint" fights="true" link="huntspoint" dir="off"><desc>
 
-            </desc>
-        </place>
-        <item nomen="crips" kw="blue" dir="" fights="true" access="">
-            <desc>
-            They're so fresh... from the crips
-            </desc>
-        </item>
-        <item nomen="bloods" kw="red" dir="" fights="true" access="">
-            <desc>
-            Gang warfare
-            </desc>
-        </item>
-    </stop>
+            </desc></place><place access="" nomen="" fights="true" dir=""><desc>
 
-    <stop nomen="huntspoint" im="chicken.jpg" sd="pusherman.ogg" kw="curtis">
-        <desc nomen="huntspoint" >
+            </desc></place><place access="" nomen="" dir="" fight="true"><desc>
+
+            </desc></place></stop><stop im="chicken.jpg" nomen="huntspoint" kw="curtis" sd="pusherman.ogg"><desc nomen="huntspoint">
 
                 ___    _    ___    _     ___    __        ___       __
             \  |   |  / |  |   |  | |    \  |  | (__    __)  )  ____)
@@ -354,8 +257,7 @@
 
             and the East River to the south.
 
-        </desc>
-        <desc>
+        </desc><desc>
 
 
             Hunts Point Avenue is the primary street through Hunts Point.
@@ -364,34 +266,19 @@
 
             in many cases for its crime and prostitution
 
-        </desc>
-        <place nomen="chicken" dir="ground" fights="true" access="">
-            <desc>
+        </desc><place access="" nomen="chicken" fights="true" dir="ground"><desc>
 
-            </desc>
-        </place>
-        <place nomen="express" link="express2" fights="challenge" access="">
-            <desc>
+            </desc></place><place access="" nomen="express" fights="challenge" link="express2"><desc>
                 Express is here.
-            </desc>
-        </place>
-        <item nomen="prostitute" fights="true" kw="whore">
-            <desc>
+            </desc></place><item nomen="prostitute" fights="true" kw="whore"><desc>
                 Huntspoint is known for their pimps and hos.
 
                 Fo sho....
-            </desc>
-        </item>
-        <item nomen="pimp" fights="true" kw="slap">
-            <desc>
+            </desc></item><item nomen="pimp" fights="true" kw="slap"><desc>
 
                 There is a pimp with a big old hat.
 
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="express2" im="chicken.jpg">
-        <desc nomen="express2" >
+            </desc></item></stop><stop nomen="express2"><desc nomen="express2">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -401,33 +288,17 @@
 
                         You're on the 4,5,6 express!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="3av" link="3av" access="">
-            <desc>
+            </desc></place><place access="" nomen="3av" link="3av"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="3av" im="chicken.jpg" sd="breakyaneck.ogg" access="">
-        <desc>
+            </desc></item></stop><stop access="" nomen="3av" im="" sd="breakyaneck.ogg"><desc>
          ______          __   _______
         |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
         |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |  -__|
@@ -435,44 +306,25 @@
 
                      You're at the 3rd Avenue Station.
 
-        </desc>
-        <desc>
+        </desc><desc>
             You can get back on the Express... we're still in the Bronx
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc>
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc>
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
                 You can always hang on the tracks.
-            </desc>
-        </place>
-        <place nomen="express" dir="behind" link="express3"  fights="true" im="" sd="" access="cost,1,1">
-            <desc nomen="express" dir="behind" fights="true">
+            </desc></place><place nomen="express" fights="true" access="cost,1,1" link="express3" im="" dir="behind" sd=""><desc nomen="express" fights="true" dir="behind">
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
                 You need at least 25 @s to get on the train.
-            </desc>
-        </place>
-        <item nomen="pimp" dir="corner" fights="true">
-            <desc>
+            </desc></place><item nomen="pimp" fights="true" dir="corner"><desc>
 
                 There's a man the looks a lot like a pimp here.
 
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </item>
-        <item nomen="dmx" im="" sd="" access="">
-            <desc>
+            </desc></item><item access="" nomen="dmx" im="" sd=""><desc>
 
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="express3" im="chicken.jpg" sd="breakyaneck.ogg">
-        <desc nomen="express3" >
+            </desc></item></stop><stop nomen="express3"><desc nomen="express3">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -481,67 +333,35 @@
         /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
                         You're on the 4,5,6 express!
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="125th Street" link="125th St" access="">
-            <desc>
+            </desc></place><place access="" nomen="125th Street" link="125th St"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="125th St" dir="off" link="express" im="harlem.jpg" access="">
-        <desc nomen="125th St" dir="off" link="express" im="harlem.jpg">
+            </desc></item></stop><stop access="" link="express" nomen="125th St" im="harlem.jpg" dir="off"><desc link="express" nomen="125th St" im="harlem.jpg" dir="off">
 
-        </desc>
-        <desc nomen="125th St" dir="off" link="express" im="harlem.jpg">
+        </desc><desc link="express" nomen="125th St" im="harlem.jpg" dir="off">
 
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc nomen="tracks" fights="true" dir="now">
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="express" dir="behind" link="express4"  fights="true" im="" sd="" access="">
-            <desc nomen="express" dir="behind" fights="true">
+            </desc></place><place nomen="express" fights="true" access="" link="express4" im="" dir="behind" sd=""><desc nomen="express" fights="true" dir="behind">
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <item nomen="westchester">
-            <desc nomen="westchester" desc_type="intro">
+            </desc></place><item nomen="westchester"><desc nomen="westchester" desc_type="intro">
                 There is a business-man from Westchester. He has a long overcoat
-            </desc>
-            <desc nomen="westchester" >
+            </desc><desc nomen="westchester">
 
-            </desc>
-        </item>
-        <item nomen="pigeon" dir="up" fights="true" kw="bird" im="" sd="" access="">
-            <desc nomen="pigeon">
+            </desc></item><item nomen="pigeon" fights="true" access="" kw="bird" im="" dir="up" sd=""><desc nomen="pigeon">
                 You see a dirty, dirty pigeon with ruffled feathers and a bad attitude.
-            </desc>
-            <desc>
+            </desc><desc>
                 Pigeon- Intro:
                 A pigeon is a girl who be walkin' by
                 My rimmed up blue red loose Spark wit five
@@ -564,12 +384,7 @@
                 Tryin' to holla at me
 
                 You're too slow to know this rapper. So it's time for a Twitter Battle!
-            </desc>
-
-        </item>
-    </stop>
-    <stop nomen="express4" >
-        <desc nomen="express4" >
+            </desc></item></stop><stop nomen="express4"><desc nomen="express4">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -579,52 +394,26 @@
 
                         You're on the 4,5,6 express!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="86th street" link="86th street" access="">
-            <desc>
+            </desc></place><place access="" nomen="86th street" link="86th street"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" fights="true" kw="saddam" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak" fights="true" kw="saddam"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="86th street">
-        <desc>
+            </desc></item></stop><stop nomen="86th street"><desc>
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="express" link="express5" access="cost,1,1">
-            <desc>
+        </desc><place access="cost,1,1" nomen="express" link="express5"><desc>
 
-            </desc>
-        </place>
-        <item nomen="hype girl" access="cost,1,1">
-            <desc>
+            </desc></place><item access="cost,1,1" nomen="hype girl"><desc>
                 "Yo honey, I can be the girl of your dreams!
 
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="express5" >
-        <desc nomen="express5" >
+            </desc></item></stop><stop nomen="express5"><desc nomen="express5">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -634,47 +423,25 @@
 
                         You're on the 4,5,6 express!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="grand central" link="grand central" access="">
-            <desc>
+            </desc></place><place access="" nomen="grand central" link="grand central"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="grand central">
-        <desc>
+            </desc></item></stop><stop nomen="grand central"><desc>
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="express" link="express6">
+        </desc><place nomen="express" link="express6">
 
-        </place>
-        <item nomen="" access="">
+        </place><item access="" nomen="">
 
-        </item>
-    </stop>
-    <stop nomen="express6" >
-        <desc nomen="express6" >
+        </item></stop><stop nomen="express6"><desc nomen="express6">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -683,55 +450,27 @@
         /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
                         You're on the 4,5,6 express!
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="union square" link="union square">
-            <desc>
+            </desc></place><place nomen="union square" link="union square"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="union square" im="needle.jpg" sd="" access="">
-        <desc nomen="alive">YOU WIN! Hop up in your hipster palace!</desc>
-        <place nomen="outside" dir="u" fights="true" kw="drive" access="">
-            <desc nomen="outside" dir="u" fights="true">
+            </desc></item></stop><stop access="" nomen="union square" im="needle.jpg" sd=""><desc nomen="alive">YOU WIN! Hop up in your hipster palace!</desc><place access="" nomen="outside" fights="true" kw="drive" dir="u"><desc nomen="outside" fights="true" dir="u">
                 Be aware of Needles and Yuppies! Outside of St. Marks they're known to be found. Hoppin' and hollerin'.
                 Up and down and up and down.
                 Speedballs makes the OD baby crown, here in St. Marks. We think we're profound.
-            </desc>
-        </place>
-        <place nomen="express" link="express7" dir="on" fights="true" kw="death" access="">
-            <desc nomen="outside" dir="u" fights="true">
+            </desc></place><place nomen="express" fights="true" access="" link="express7" kw="death" dir="on"><desc nomen="outside" fights="true" dir="u">
                 Be aware of Needles and Yuppies! Outside of St. Marks they're known to be found. Hoppin' and hollerin'.
                 Up and down and up and down.
                 Speedballs makes the OD baby crown, here in St. Marks. We think we're profound.
-            </desc>
-        </place>
-        <item nomen="hipster" dir="down" fights="true" access="">
-            <desc nomen="hipster" dir="down" fights="true">
+            </desc></place><item access="" nomen="hipster" fights="true" dir="down"><desc nomen="hipster" fights="true" dir="down">
                 "Like holy shit, what bands do you even know? This iPod is horrendous!"
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="express7" sd="caveman.ogg">
-        <desc nomen="express7" >
+            </desc></item></stop><stop nomen="express7" sd="caveman.ogg"><desc nomen="express7">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -741,33 +480,17 @@
 
                         You're on the 4,5,6 express!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="bleeker street" link="bleeker street">
-            <desc>
+            </desc></place><place nomen="bleeker street" link="bleeker street"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="bleeker street" im="" sd="feels.ogg" access="">
-        <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
+            </desc></item></stop><stop access="" nomen="bleeker street" im="" sd="feels.ogg"><desc link="express" nomen="bleeker street" im="harlem.jpg" dir="off">
 
 
       Bleecker Street is a west-east street in New York City borough of Manhattan.
@@ -779,37 +502,21 @@
            but which was once a major center for American bohemia.
 
 
-        </desc>
-        <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
+        </desc><desc link="express" nomen="bleeker street" im="harlem.jpg" dir="off">
 
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc nomen="tracks" fights="true" dir="now">
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="local" dir="a" link="local" fights="true" im="" sd="" access="">
-            <desc nomen="local" dir="a" fights="true">
+            </desc></place><place nomen="local" fights="true" access="" link="local" im="" dir="a" sd=""><desc nomen="local" fights="true" dir="a">
                 The Local six train is here!
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="express" dir="on" link="express8"  fights="true" im="" sd="" access="">
-            <desc nomen="express" dir="on" fights="true">
+            </desc></place><place nomen="express" fights="true" access="" link="express8" im="" dir="on" sd=""><desc nomen="express" fights="true" dir="on">
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
                 If you get off, you gotta fight to get back on!
-            </desc>
-        </place>
-    </stop>
-    <stop nomen="express8">
-        <desc nomen="express8" >
+            </desc></place></stop><stop nomen="express8"><desc nomen="express8">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -819,88 +526,44 @@
 
                         You're on the 4,5,6 express!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="fulton street" link="fulton street" access="cost,1,1">
-            <desc>
+            </desc></place><place access="cost,1,1" nomen="fulton street" link="fulton street"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="fulton street" im="" sd="" access="">
-        <desc nomen="fulton street" dir="off" link="express" im="harlem.jpg">
+            </desc></item></stop><stop access="" nomen="fulton street" im="" sd=""><desc link="express" nomen="fulton street" im="harlem.jpg" dir="off">
 
-        </desc>
-        <desc nomen="fulton street" dir="off" link="express" im="harlem.jpg">
+        </desc><desc link="express" nomen="fulton street" im="harlem.jpg" dir="off">
 
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc nomen="tracks" fights="true" dir="now">
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="express" dir="on" link="express9"  fights="true" im="" sd="" access="">
-            <desc nomen="express" dir="on" fights="true">
+            </desc></place><place nomen="express" fights="true" access="" link="express9" im="" dir="on" sd=""><desc nomen="express" fights="true" dir="on">
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
                 If you get off, you gotta fight to get back on!
-            </desc>
-        </place>
-        <place nomen="wall street">
+            </desc></place><place nomen="wall street">
 
-        </place>
-    </stop>
-    <stop nomen="wall street" im="money.jpg" sd="wall_street.wav" access="">
-        <desc nomen="">
+        </place></stop><stop access="" nomen="wall street" im="money.jpg" sd="wall_street.wav"><desc nomen="">
             Welcome to Wall Street!
-        </desc>
-        <place nomen="World Trade Center" dir="up" link="worldtradecenter" fights="true" kw="" access="">
-            <desc nomen = "outside" dir="up" fights="true">
+        </desc><place nomen="World Trade Center" fights="true" access="" link="worldtradecenter" kw="" dir="up"><desc nomen="outside" fights="true" dir="up">
                 You lost your soul! How did it come to this?!
-            </desc>
-        </place>
-        <place nomen="gecko" dir="behind" link="hell" fights="true" kw=" " access="">
-            <desc nomen="gecko" fights="true">
-            </desc>
-        </place>
-        <place nomen="subway" access="cost,1,1">
-            <desc>
+            </desc></place><place nomen="gecko" fights="true" access="" link="hell" kw=" " dir="behind"><desc nomen="gecko" fights="true">
+            </desc></place><place access="cost,1,1" nomen="subway"><desc>
 
                 You can get back on the subway!
 
                 Ain't no shame in going back to your original idea!
 
-            </desc>
-        </place>
-        <item nomen="wallet" dir="ground" fights="true" access="">
-            <desc nomen="wallet" dir="ground" fights="true">
+            </desc></place><item access="" nomen="wallet" fights="true" dir="ground"><desc nomen="wallet" fights="true" dir="ground">
                 A sweet-ass leather wallet lies here.
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="express9">
-        <desc nomen="express9" >
+            </desc></item></stop><stop nomen="express9"><desc nomen="express9">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
          |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
@@ -909,111 +572,53 @@
         /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
                         You're on the 4,5,6 express!
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="fulton street" link="fulton street" access="cost,1,1">
-            <desc>
+            </desc></place><place access="cost,1,1" nomen="fulton street" link="fulton street"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="borough street">
-        <desc >
+            </desc></item></stop><stop nomen="borough street"><desc>
 
-        </desc>
-        <desc >
+        </desc><desc>
 
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc nomen="tracks" fights="true" dir="now">
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="express10" dir="on" link="express10"  fights="true" im="" sd="" access="">
-            <desc nomen="express" dir="on" fights="true">
+            </desc></place><place nomen="express10" fights="true" access="" link="express10" im="" dir="on" sd=""><desc nomen="express" fights="true" dir="on">
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
                 If you get off, you gotta fight to get back on!
-            </desc>
-        </place>
-        <place nomen="williamsburg" link="williamsburg">
-            <desc>
+            </desc></place><place nomen="williamsburg" link="williamsburg"><desc>
 
-            </desc>
+            </desc></place></stop><stop nomen="williamsburg" fights="true" link="hipsterdom"><desc nomen="williamsburg">
 
-        </place>
+        </desc><place access="" nomen="outside brooklyn" fights="true" link="outside brooklyn"><desc access="" nomen="outside brooklyn" fights="true" link="outside brooklyn">
 
-    </stop>
-    <stop nomen="williamsburg" link="hipsterdom" fights="true">
-        <desc nomen="williamsburg" >
-
-        </desc>
-        <place nomen="outside brooklyn" fights="true" link="outside brooklyn" access="">
-            <desc nomen="outside brooklyn" fights="true" link="outside brooklyn"  access="">
-
-            </desc>
-        </place>
-        <place nomen="doc martens" fights="true" access="">
-            <desc nomen="doc martens" fights="true">
+            </desc></place><place access="" nomen="doc martens" fights="true"><desc nomen="doc martens" fights="true">
                 A man claiming to be Doc Marten has "risen from the grave" here to kick the shit out of hipsters wearing his boots.
-            </desc>
-        </place>
-    </stop>
-    <stop nomen="outside brooklyn" access="">
-        <desc nomen="outside brooklyn">
+            </desc></place></stop><stop access="" nomen="outside brooklyn"><desc nomen="outside brooklyn">
 
-        </desc>
-        <desc nomen="outside brooklyn">
+        </desc><desc nomen="outside brooklyn">
 
-        </desc>
-        <place nomen="hipsterdom" fights="true" link="hipsterdom" access="">
-            <desc nomen="hipsterdom" fights="true" amt="" link="hipsterdom"  access="">
+        </desc><place access="" nomen="hipsterdom" fights="true" link="hipsterdom"><desc access="" nomen="hipsterdom" fights="true" link="hipsterdom" amt="">
 
-            </desc>
-        </place>
-    </stop>
-    <stop nomen="hipsterdom" fights="true">
-        <desc nomen="hipsterdom" fights="true">
+            </desc></place></stop><stop nomen="hipsterdom" fights="true"><desc nomen="hipsterdom" fights="true">
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="subway" link="williamsburg">
-            <desc nomen="">
+        </desc><place nomen="subway" link="williamsburg"><desc nomen="">
 
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <item nomen="glasses" access="">
+            </desc></place><item access="" nomen="glasses">
 
-        </item>
-    </stop>
-    <stop nomen="express10">
-        <desc nomen="express10" >
+        </item></stop><stop nomen="express10"><desc nomen="express10">
 
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -1024,152 +629,69 @@
 
                         You're on the 4,5,6 express!
 
-        </desc>
-        <desc>
+        </desc><desc>
 
-        </desc>
-        <place nomen="outside" link="outside"  access="">
-            <desc>
+        </desc><place access="" nomen="outside" link="outside"><desc>
 
-            </desc>
-        </place>
-        <place nomen="nevins st" link="nevins st" access="cost,1,1">
-            <desc>
+            </desc></place><place access="cost,1,1" nomen="nevins st" link="nevins st"><desc>
 
-            </desc>
-        </place>
-        <item nomen="sweaty man" kw="hairy" access="">
-            <desc>
+            </desc></place><item access="" nomen="sweaty man" kw="hairy"><desc>
 
-            </desc>
-        </item>
-        <item nomen="ak" access="cost,1,1">
-            <desc>
+            </desc></item><item access="cost,1,1" nomen="ak"><desc>
                 Even when you lose, it feels good to win!
-            </desc>
-        </item>
-    </stop>
-    <stop nomen="nevins st">
-        <desc >
+            </desc></item></stop><stop nomen="nevins st"><desc>
 
-        </desc>
-        <desc >
+        </desc><desc>
 
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc nomen="tracks" fights="true" dir="now">
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="express11" dir="on" link="suburbs"  fights="true" kw="express" im="" sd="" access="">
-            <desc >
+            </desc></place><place nomen="express11" fights="true" access="" link="suburbs" im="" kw="express" dir="on" sd=""><desc>
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
                 If you get off, you gotta fight to get back on!
-            </desc>
-        </place>
-        <place nomen="barclays" link="barclays">
-            <desc>
+            </desc></place><place nomen="barclays" link="barclays"><desc>
 
-            </desc>
+            </desc></place></stop><stop nomen="barclays"><desc>
 
-        </place>
+        </desc><desc>
 
-    </stop>
-    <stop nomen="barclays">
-        <desc >
-
-        </desc>
-        <desc >
-
-        </desc>
-        <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
-            <desc nomen="tracks" dir="now" fights="true">
+        </desc><place nomen="tracks" fights="true" access="" link="tracks" im="bearded_bum.jpg" dir="now" sd="green_eyes.ogg"><desc nomen="tracks" fights="true" dir="now">
                 It's dangerous down on the tracks. Dead bodies. Rats.
-            </desc>
-            <desc>
+            </desc><desc>
 
-            </desc>
-        </place>
-        <place nomen="express11" dir="on" link="suburbs"  fights="true" kw="express" im="" sd="" access="">
-            <desc >
+            </desc></place><place nomen="express11" fights="true" access="" link="suburbs" im="" kw="express" dir="on" sd=""><desc>
                 The Express Six Train is here!
-            </desc>
-            <desc>
+            </desc><desc>
                 If you get off, you gotta fight to get back on!
-            </desc>
-        </place>
-        <place nomen="barclays" link="barclays">
-            <desc>
+            </desc></place><place nomen="barclays" link="barclays"><desc>
 
-            </desc>
-
-        </place>
-    </stop>
-    <stop nomen="tracks"  fights="true">
-        <desc nomen="tracks">
+            </desc></place></stop><stop nomen="tracks" fights="true"><desc nomen="tracks">
             Welcome to the land of the free! You have joined a gang of rebel warriors!
-        </desc>
-        <place nomen="" fights="true" access="">
-            <desc>
+        </desc><place access="" nomen="" fights="true"><desc>
 
-            </desc>
-        </place>
-    </stop>
-    <stop nomen="outside" link="outside" im="" sd="" access="">
-        <desc nomen="endgame">
+            </desc></place></stop><stop access="" link="outside" nomen="outside" im="" sd=""><desc nomen="endgame">
                 Death by driveby.
-        </desc>
-        <item nomen="" fights="false" access="">
+        </desc><item access="" nomen="" fights="false">
 
-        </item>
-    </stop>
-
-    <stop nomen="death" im="grimreaper.jpg" sd="" access="">
-        <desc nomen="death" access="">
+        </item></stop><stop access="" nomen="death" im="grimreaper.jpg" sd=""><desc access="" nomen="death">
             I don't think I've ever had death taste this good. Oh my god, the fucking chicken!
-        </desc>
-        <desc nomen="death">
+        </desc><desc nomen="death">
 
-        </desc>
-        <place nomen="hell" dir="d" fights="true" access="">
-            <desc nomen="hell" dir="d" fights="true" >
+        </desc><place access="" nomen="hell" fights="true" dir="d"><desc nomen="hell" fights="true" dir="d">
 
-            </desc>
-        </place>
-        <place nomen="heaven" dir="u" fights="true" access="">
-            <desc nomen="heaven" dir="u" fights="true" >
+            </desc></place><place access="" nomen="heaven" fights="true" dir="u"><desc nomen="heaven" fights="true" dir="u">
 
-            </desc>
-        </place>
-        <item nomen="" im="" sd="" access="">
-            <desc nomen="">
+            </desc></place><item access="" nomen="" im="" sd=""><desc nomen="">
 
-            </desc>
-        </item>
-    </stop>
-
-    <stop nomen="local" type="paranoia">
-        <desc>
+            </desc></item></stop><stop nomen="local" type="paranoia"><desc>
             You die of paranoia.
-        </desc>
-        <place nomen="death">
-            <desc></desc>
-        </place>
+        </desc><place nomen="death"><desc></desc></place></stop><stop nomen="" link="">
 
-    </stop>
-    <stop nomen="" link="">
+    </stop><stop nomen="" conclusion="">
 
-    </stop>
-    <stop nomen="" conclusion="">
-
-    </stop>
-
-    <scenario ats="boss" rhymes="boss" sd="">
+    </stop><scenario ats="boss" rhymes="boss" sd="">
 
             They beat you with their rhymes and with the crowd.
 
@@ -1183,8 +705,7 @@
 
             Nothing wrong with workin your way up from a tyke.
 
-    </scenario>
-    <scenario ats="boss" rhymes="equal" sd="">
+    </scenario><scenario ats="boss" rhymes="equal" sd="">
 
             The crowd loved your raps, but they liked theirs too!
 
@@ -1194,8 +715,7 @@
 
             You're getting a little hoarse!
 
-    </scenario>
-    <scenario ats="boss" rhymes="player" sd="">
+    </scenario><scenario ats="boss" rhymes="player" sd="">
 
             You smoked them with your flow!
 
@@ -1207,8 +727,7 @@
 
             Time to find some new turf!
 
-    </scenario>
-    <scenario ats="equal" rhymes="boss" sd="">
+    </scenario><scenario ats="equal" rhymes="boss" sd="">
 
             They smoked you out! And grabbed some of your rhymes!
 
@@ -1218,8 +737,7 @@
 
             You better move on, because this sucker is all rhymed up.
 
-    </scenario>
-    <scenario ats="equal" rhymes="equal" sd="">
+    </scenario><scenario ats="equal" rhymes="equal" sd="">
 
             It's a draw!
 
@@ -1227,8 +745,7 @@
 
             You best dry your eyes.
 
-    </scenario>
-    <scenario ats="equal" rhymes="player" sd="">
+    </scenario><scenario ats="equal" rhymes="player" sd="">
 
             You smoked them with your flow.
 
@@ -1236,21 +753,18 @@
 
             We're rich, bitch!
 
-    </scenario>
-    <scenario ats="player" rhymes="boss" sd="">
+    </scenario><scenario ats="player" rhymes="boss" sd="">
 
             You out hollered them. You mad tweeter, you!
             But they did smoke you out and nab some of your stash!
 
-    </scenario>
-    <scenario ats="player" rhymes="equal" sd="">
+    </scenario><scenario ats="player" rhymes="equal" sd="">
 
             You sly mother. You beat that turkey!
             And gained some followers from his crew!
             Holler at it baby!!
 
-    </scenario>
-    <scenario ats="player" rhymes="player" sd="">
+    </scenario><scenario ats="player" rhymes="player" sd="">
 
             You hollered so hard that you added some holler to your crew!
             Feel that beat get loose in you!
@@ -1261,22 +775,13 @@
             You popped them so hard you grabbed some rhymes too!
             Holler! Holler!
 
-    </scenario>
-    <ascii>
-        <im nomen="intro">
-            <part>
+    </scenario><ascii><im nomen="intro"><part>
 
-            </part>
-            <part>
+            </part><part>
 
-            </part>
-            <part>
+            </part><part>
 
-            </part>
-
-        </im>
-        <im nomen="death">
-            <part>
+            </part></im><im nomen="death"><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -1291,8 +796,7 @@
                                      '.    /
                                        '-./
 
-            </part>
-            <part>
+            </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -1307,8 +811,7 @@
                                              '.    /
                                                '-./
 
-            </part>
-            <part>
+            </part><part>
 
                                               .-----------------TTTT_-----_______
                                             /''''''''''(______O] ----------____  \______/]_
@@ -1323,8 +826,7 @@
                                                          '.    /
                                                            '-./
 
-            </part>
-            <part>
+            </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -1340,8 +842,7 @@
                                        '-./
 
 
-            </part>
-            <part>
+            </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -1357,8 +858,7 @@
                                                '-./
 
 
-            </part>
-            <part>
+            </part><part>
 
                                               .-----------------TTTT_-----_______
                                             /''''''''''(______O] ----------____  \______/]_
@@ -1374,8 +874,7 @@
                                                            '-./
 
 
-            </part>
-            <part>
+            </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -1390,8 +889,7 @@
                                      '.    /
                                        '-./
 
-            </part>
-            <part>
+            </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -1406,8 +904,7 @@
                                              '.    /
                                                '-./
 
-            </part>
-            <part>
+            </part><part>
 
                                               .-----------------TTTT_-----_______
                                             /''''''''''(______O] ----------____  \______/]_
@@ -1422,8 +919,7 @@
                                                          '.    /
                                                            '-./
 
-            </part>
-            <part>
+            </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -1437,8 +933,7 @@
                                     -    '-.
                                      '.    /
                                        '-./
-            </part>
-            <part>
+            </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -1452,8 +947,7 @@
                                             -    '-.
                                              '.    /
                                                '-./
-            </part>
-            <part>
+            </part><part>
 
                                           .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
@@ -1467,8 +961,7 @@
                                                     -    '-.
                                                      '.    /
                                                        '-./
-            </part>
-            <part>
+            </part><part>
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @
@@ -1482,8 +975,7 @@
                                      '.    /
                                        '-./
 
-            </part>
-            <part>
+            </part><part>
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
              __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @
@@ -1497,8 +989,7 @@
                                              '.    /
                                                '-./
 
-            </part>
-            <part>
+            </part><part>
                                           .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
                      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @
@@ -1512,8 +1003,7 @@
                                                      '.    /
                                                        '-./
 
-            </part>
-            <part>
+            </part><part>
                            .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @
@@ -1527,8 +1017,7 @@
                                      '.    /
                                        '-./
 
-            </part>
-            <part>
+            </part><part>
                                .-----------------TTTT_-----_______
                             /''''''''''(______O] ----------____  \______/]_
          __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @
@@ -1542,8 +1031,7 @@
                                          '.    /
                                            '-./
 
-            </part>
-            <part>
+            </part><part>
                                            .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
                      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @
@@ -1557,8 +1045,7 @@
                                                      '.    /
                                                        '-./
 
-            </part>
-            <part>
+            </part><part>
                            .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @     @
@@ -1571,8 +1058,7 @@
                                     -    '-.
                                      '.    /
                                        '-./
-            </part>
-            <part>
+            </part><part>
                                    .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
              __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @
@@ -1585,8 +1071,7 @@
                                             -    '-.
                                              '.    /
                                                '-./
-            </part>
-            <part>
+            </part><part>
                                            .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
                      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @
@@ -1599,8 +1084,7 @@
                                                     -    '-.
                                                      '.    /
                                                        '-./
-            </part>
-            <part>
+            </part><part>
 
                                                                                         `8.`8888.      ,8'
                                                                                          `8.`8888.    ,8'.
@@ -1613,8 +1097,7 @@
                                                                                                8 8888
                                                                                                8 8888
 
-        </part>
-        <part>
+        </part><part>
 
                                                                         `8.`8888.      ,8'  ,o888888o.
                                                                          `8.`8888.    ,8'. 8888     `88.
@@ -1627,9 +1110,7 @@
                                                                                8 8888    ` 8888     ,88'
                                                                                8 8888       `8888888P'
 
-        </part>
-
-        <part>
+        </part><part>
 
                                                         `8.`8888.      ,8'  ,o888888o.     8 8888      88
                                                          `8.`8888.    ,8'. 8888     `88.   8 8888      88
@@ -1642,8 +1123,7 @@
                                                                8 8888    ` 8888     ,88'     8888   ,d8P
                                                                8 8888       `8888888P'        `Y88888P'
 
-        </part>
-        <part>
+        </part><part>
 
                                             `8.`8888.      ,8'  ,o888888o.     8 8888      88
                                              `8.`8888.    ,8'. 8888     `88.   8 8888      88
@@ -1656,8 +1136,7 @@
                                                    8 8888    ` 8888     ,88'     8888   ,d8P
                                                    8 8888       `8888888P'        `Y88888P'
 
-        </part>
-        <part>
+        </part><part>
 
                             `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.
                              `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.
@@ -1670,8 +1149,7 @@
                                    8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'
                                    8 8888       `8888888P'        `Y88888P'             8 888888888P'
 
-        </part>
-        <part>
+        </part><part>
 
                     `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888
                      `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888
@@ -1684,8 +1162,7 @@
                            8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888
                            8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888
 
-        </part>
-        <part>
+        </part><part>
 
     `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
      `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -1698,8 +1175,7 @@
            8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
            8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -1712,8 +1188,7 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -1725,22 +1200,7 @@
        8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-        </part>
-        <part>
-
-`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
- `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
-  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
-   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
-    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
-     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
-      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
-       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
-       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
-       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -1753,8 +1213,7 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -1767,33 +1226,7 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
-`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
- `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
-  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
-   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
-    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
-     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
-      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
-       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
-       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
-       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-        </part>
-        <part>
-
-`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
- `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
-  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
-   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
-    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
-     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
-      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
-       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
-       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
-       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -1806,11 +1239,43 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
+        </part><part>
+`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
+ `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
+  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
+   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
+    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
+     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
+      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
+       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
+       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
+       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+        </part><part>
 
-    </im>
-    <im nomen="drive by">
-        <part>
+`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
+ `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
+  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
+   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
+    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
+     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
+      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
+       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
+       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
+       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+        </part><part>
+
+`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
+ `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
+  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
+   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
+    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
+     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
+      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
+       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
+       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
+       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+
+        </part></im><im nomen="drive by"><part>
 
                                                                       _/ ||                ~-_
                                                                     ,/   //       /~-       /  ~-_  ________----------//
@@ -1821,8 +1286,7 @@
                                                   \----|  \___/ ||--------------------'----------|  \____/ //
                                                  ______`.______.'________________________________`._______.'____________
 
-        </part>
-        <part>
+        </part><part>
 
 
                                                                   _/ ||                ~-_
@@ -1834,8 +1298,7 @@
                                               \----|  \___/ ||--------------------'----------|  \____/ //
                                              ______`.______.'________________________________`._______.'____________
 
-        </part>
-        <part>
+        </part><part>
 
                                                           _/ ||                ~-_
                                                         ,/   //       /~-       /  ~-_  ________----------//
@@ -1846,8 +1309,7 @@
                                       \----|  \___/ ||--------------------'----------|  \____/ //
                                      ______`.______.'________________________________`._______.'____________
 
-        </part>
-        <part>
+        </part><part>
 
                                                      _/ ||                ~-_
                                                     ,/   //       /~-       /  ~-_  ________----------//
@@ -1858,8 +1320,7 @@
                                   \----|  \___/ ||--------------------'----------|  \____/ //
                                  ______`.______.'________________________________`._______.'____________
 
-        </part>
-        <part>
+        </part><part>
 
                                                   _/ ||                ~-_
                                                 ,/   //       /~-       /  ~-_  ________----------//
@@ -1869,8 +1330,7 @@
                              \===== / /~~~\ \ \                   |         ____________________|-~
                               \----|  \___/ ||--------------------'----------|  \____/ //
                              ______`.______.'________________________________`._______.'____________
-        </part>
-        <part>
+        </part><part>
 
                                           _/ ||                ~-_
                                         ,/   //       /~-       /  ~-_  ________----------//
@@ -1881,8 +1341,7 @@
                       \----|  \___/ ||--------------------'----------|  \____/ //
                      ______`.______.'________________________________`._______.'____________
 
-        </part>
-        <part>
+        </part><part>
 
                                   _/ ||                ~-_
                                 ,/   //       /~-       /  ~-_  ________----------//
@@ -1893,8 +1352,7 @@
               \----|  \___/ ||--------------------'----------|  \____/ //
              ______`.______.'________________________________`._______.'____________
 
-        </part>
-        <part>
+        </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -1909,8 +1367,7 @@
                                      '.    /
                                        '-./
 
-        </part>
-        <part>
+        </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -1925,8 +1382,7 @@
                                              '.    /
                                                '-./
 
-        </part>
-        <part>
+        </part><part>
 
                                               .-----------------TTTT_-----_______
                                             /''''''''''(______O] ----------____  \______/]_
@@ -1941,8 +1397,7 @@
                                                          '.    /
                                                            '-./
 
-        </part>
-        <part>
+        </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -1958,8 +1413,7 @@
                                        '-./
 
 
-        </part>
-        <part>
+        </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -1975,8 +1429,7 @@
                                                '-./
 
 
-        </part>
-        <part>
+        </part><part>
 
                                               .-----------------TTTT_-----_______
                                             /''''''''''(______O] ----------____  \______/]_
@@ -1992,8 +1445,7 @@
                                                            '-./
 
 
-        </part>
-        <part>
+        </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -2008,8 +1460,7 @@
                                      '.    /
                                        '-./
 
-        </part>
-        <part>
+        </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -2024,8 +1475,7 @@
                                              '.    /
                                                '-./
 
-        </part>
-        <part>
+        </part><part>
 
                                               .-----------------TTTT_-----_______
                                             /''''''''''(______O] ----------____  \______/]_
@@ -2040,8 +1490,7 @@
                                                          '.    /
                                                            '-./
 
-        </part>
-        <part>
+        </part><part>
 
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
@@ -2055,8 +1504,7 @@
                                     -    '-.
                                      '.    /
                                        '-./
-        </part>
-        <part>
+        </part><part>
 
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
@@ -2070,8 +1518,7 @@
                                             -    '-.
                                              '.    /
                                                '-./
-        </part>
-        <part>
+        </part><part>
 
                                           .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
@@ -2085,8 +1532,7 @@
                                                     -    '-.
                                                      '.    /
                                                        '-./
-        </part>
-        <part>
+        </part><part>
                           .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @
@@ -2100,8 +1546,7 @@
                                      '.    /
                                        '-./
 
-        </part>
-        <part>
+        </part><part>
                                   .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
              __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @
@@ -2115,8 +1560,7 @@
                                              '.    /
                                                '-./
 
-        </part>
-        <part>
+        </part><part>
                                           .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
                      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @
@@ -2130,8 +1574,7 @@
                                                      '.    /
                                                        '-./
 
-        </part>
-        <part>
+        </part><part>
                            .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @
@@ -2145,8 +1588,7 @@
                                      '.    /
                                        '-./
 
-        </part>
-        <part>
+        </part><part>
                                .-----------------TTTT_-----_______
                             /''''''''''(______O] ----------____  \______/]_
          __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @
@@ -2160,8 +1602,7 @@
                                          '.    /
                                            '-./
 
-        </part>
-        <part>
+        </part><part>
                                            .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
                      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @
@@ -2175,8 +1616,7 @@
                                                      '.    /
                                                        '-./
 
-        </part>
-        <part>
+        </part><part>
                            .-----------------TTTT_-----_______
                         /''''''''''(______O] ----------____  \______/]_
      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @     @
@@ -2189,8 +1629,7 @@
                                     -    '-.
                                      '.    /
                                        '-./
-        </part>
-        <part>
+        </part><part>
                                    .-----------------TTTT_-----_______
                                 /''''''''''(______O] ----------____  \______/]_
              __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @      @
@@ -2203,8 +1642,7 @@
                                             -    '-.
                                              '.    /
                                                '-./
-        </part>
-        <part>
+        </part><part>
                                            .-----------------TTTT_-----_______
                                         /''''''''''(______O] ----------____  \______/]_
                      __...---'"""\_ --''   Q                               ___________@  @  @  @   @   @     @      @
@@ -2217,8 +1655,7 @@
                                                     -    '-.
                                                      '.    /
                                                        '-./
-        </part>
-        <part>
+        </part><part>
 
                                                                                                     `8.`8888.      ,8'
                                                                                                      `8.`8888.    ,8'.
@@ -2231,8 +1668,7 @@
                                                                                                            8 8888
                                                                                                            8 8888
 
-        </part>
-        <part>
+        </part><part>
 
                                                                                     `8.`8888.      ,8'  ,o888888o.
                                                                                      `8.`8888.    ,8'. 8888     `88.
@@ -2245,9 +1681,7 @@
                                                                                            8 8888    ` 8888     ,88'
                                                                                            8 8888       `8888888P'
 
-        </part>
-
-        <part>
+        </part><part>
 
                                                         `8.`8888.      ,8'  ,o888888o.     8 8888      88
                                                          `8.`8888.    ,8'. 8888     `88.   8 8888      88
@@ -2260,8 +1694,7 @@
                                                                8 8888    ` 8888     ,88'     8888   ,d8P
                                                                8 8888       `8888888P'        `Y88888P'
 
-        </part>
-        <part>
+        </part><part>
 
                                             `8.`8888.      ,8'  ,o888888o.     8 8888      88
                                              `8.`8888.    ,8'. 8888     `88.   8 8888      88
@@ -2274,8 +1707,7 @@
                                                    8 8888    ` 8888     ,88'     8888   ,d8P
                                                    8 8888       `8888888P'        `Y88888P'
 
-        </part>
-        <part>
+        </part><part>
 
                             `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.
                              `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.
@@ -2288,8 +1720,7 @@
                                    8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'
                                    8 8888       `8888888P'        `Y88888P'             8 888888888P'
 
-        </part>
-        <part>
+        </part><part>
 
                     `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888
                      `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888
@@ -2302,8 +1733,7 @@
                            8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888
                            8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888
 
-        </part>
-        <part>
+        </part><part>
 
     `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
      `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -2316,8 +1746,7 @@
            8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
            8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -2330,8 +1759,7 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -2343,22 +1771,7 @@
        8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-        </part>
-        <part>
-
-`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
- `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
-  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
-   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
-    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
-     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
-      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
-       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
-       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
-       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -2371,8 +1784,7 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -2385,33 +1797,7 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-        <part>
-`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
- `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
-  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
-   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
-    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
-     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
-      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
-       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
-       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
-       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-        </part>
-        <part>
-
-`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
- `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
-  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
-   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
-    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
-     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
-      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
-       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
-       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
-       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
-        </part>
-        <part>
+        </part><part>
 
 `8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
  `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
@@ -2424,66 +1810,91 @@
        8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
        8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
 
-        </part>
-    </im>
-    <im nomen="3rd avenue">
-        <part>
+        </part><part>
+`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
+ `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
+  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
+   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
+    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
+     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
+      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
+       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
+       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
+       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+        </part><part>
+
+`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
+ `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
+  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
+   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
+    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
+     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
+      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
+       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
+       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
+       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+        </part><part>
+
+`8.`8888.      ,8'  ,o888888o.     8 8888      88           8 888888888o.       8 8888 8 888888888888
+ `8.`8888.    ,8'. 8888     `88.   8 8888      88           8 8888    `^888.    8 8888 8 8888
+  `8.`8888.  ,8',8 8888       `8b  8 8888      88           8 8888        `88.  8 8888 8 8888
+   `8.`8888.,8' 88 8888        `8b 8 8888      88           8 8888         `88  8 8888 8 8888
+    `8.`88888'  88 8888         88 8 8888      88           8 8888          88  8 8888 8 888888888888
+     `8. 8888   88 8888         88 8 8888      88           8 8888          88  8 8888 8 8888
+      `8 8888   88 8888        ,8P 8 8888      88           8 8888         ,88  8 8888 8 8888
+       8 8888   `8 8888       ,8P  ` 8888     ,8P           8 8888        ,88'  8 8888 8 8888
+       8 8888    ` 8888     ,88'     8888   ,d8P            8 8888    ,o88P'    8 8888 8 8888
+       8 8888       `8888888P'        `Y88888P'             8 888888888P'       8 8888 8 888888888888
+
+        </part></im><im nomen="3rd avenue"><part>
                                  ______          __   _______
                                 |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
                                 |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |  -__|
                                 |______||__| |_____| |___|___| \___/|_____|__|__|_____|_____|
 
-        </part>
-        <part>
+        </part><part>
                                          ______          __   _______
                                         |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.
                                         |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |
                                         |______||__| |_____| |___|___| \___/|_____|__|__|_____|
 
-        </part>
-        <part>
+        </part><part>
                                              ______          __   _______
                                             |__    |.----.--|  | |   _   |.--.--.-----.-----.
                                             |__    ||   _|  _  | |       ||  |  |  -__|     |
                                             |______||__| |_____| |___|___| \___/|_____|__|__|
 
-        </part>
-        <part>
+        </part><part>
                                                      ______          __   _______
                                                     |__    |.----.--|  | |   _   |.--.--.-----.
                                                     |__    ||   _|  _  | |       ||  |  |  -__|
                                                     |______||__| |_____| |___|___| \___/|_____|
 
-        </part>
-        <part>
+        </part><part>
                                                          ______          __   _______
                                                         |__    |.----.--|  | |   _   |.--.--.
                                                         |__    ||   _|  _  | |       ||  |  |
                                                         |______||__| |_____| |___|___| \___/
 
-        </part>
-        <part>
+        </part><part>
                                                              ______          __   _______
                                                             |__    |.----.--|  | |   _   |
                                                             |__    ||   _|  _  | |       |
                                                             |______||__| |_____| |___|___|
 
-        </part>
-        <part>
+        </part><part>
                                                                  ______          __
                                                                 |__    |.----.--|  |
                                                                 |__    ||   _|  _  |
                                                                 |______||__| |_____|
 
-        </part>
-        <part>
+        </part><part>
                                                                      ______          __
                                                                     |__    |.----.--|  |
                                                                     |__    ||   _|  _  |
                                                                     |______||__| |_____|
 
-        </part>
-        <part>
+        </part><part>
 
                                                                              ______
                                                                             |__    |.----.
@@ -2491,25 +1902,17 @@
                                                                             |______||__|
 
 
-        </part>
-        <part>
+        </part><part>
                                                                                  ______
                                                                                 |__    |
                                                                                 |__    |
                                                                                 |______|
 
-        </part>
-    </im>
-    <im nomen="huntspoint">
-        <part>
+        </part></im><im nomen="huntspoint"><part>
     ___    _    ___    _     ___    __        __
 \  |   |  / |  |   |  | |    \  |  | (__    __)
  |  \_/  |  |  |   |  | |  |\ \ |  |    |  |
  |   _   |  |  |   |  | |  | \ \|  |    |  |
  |  / \  |  |   \_/   | |  |  \    |    |  |
 /  |___|  \__\       /__|  |___\   |____|  |____
-        </part>
-    </im>
-</ascii>
-
-</game>
+        </part></im></ascii></game>

@@ -109,6 +109,9 @@ def describe(stop,extras):
                 except:
                     print "No uses..."
             print "__________________________________________________________"
+        if 'ascii_challenge' in extras:
+            pass
+
 
         if 'unknown' in extras:
             print "We don't know what you're talkin' about."
@@ -172,7 +175,7 @@ def twitter_data(stop,boss, noun):
     global rhymes
     global ats
     print "\t\t\tIt's a glare from",noun,"with call:",boss,
-    call_prompt = raw_input("\t\t\t\tWhat's your call against this mean muggin?!")
+    call_prompt = raw_input("\n\n\t\t\t\tWhat's your call against this mean muggin?!")
     try:
         rhyme_diff, at_diff = twitter_battle(call_prompt,boss)
         rhymes += rhyme_diff
@@ -398,6 +401,7 @@ def go_command(stop,noun):
                             print "Link empty"
                             exit()
                         stop = stops[link]
+                        desc_ct = 0
                         extras=["stop_name",'stop_describe','pause_music','play_music']
                     except:
                         print "There is not a link here."
@@ -496,8 +500,8 @@ def describe_command(stop, player, noun):
         return stop
     for itm in stop.item:
         if itm.attrs["nomen"] == noun:
-            boss= itm.attrs.get("kw")
-            if itm.attrs["fights"]:
+            boss = itm.attrs.get("kw")
+            if itm.attrs["fights"]=="true":
                 rhymes, ats = twitter_data(stop,boss, noun)
                 extras= ["rhymes", "ats", "battle_results"]
                 print "You now have", rhymes,"rhymes in your rep!"
@@ -509,15 +513,15 @@ def describe_command(stop, player, noun):
                 stop.children.remove(itm)
                 return stop
 
-            elif itm.attrs["challenge"]:
-                extras=["ascii_game"]
+            elif itm.attrs["fights"]=="challenge":
+                extras=["ascii_challenge"]
                 return stop
 
     for it in player.item:
         if noun == it.attrs.get("nomen"):
-            print "You already Twitter Battled the", noun
-        extras = ['describe_place','describe_access']
-        return stop
+            print "\t\t\tYou already have the", noun,'\n\n'
+            extras = ['describe_place','describe_access']
+            return stop
 
     for pl in stop.place:
         if pl.attrs.get("nomen")==noun:
@@ -554,10 +558,10 @@ def save_command(stop):
         f.write(g_map.flatten_self())
         print "game saved!"
     print "Continue game ? (Y/N) (Pressing N will put exit the game!)"
-    continue_game = raw_input('>>')
-    if continue_game == "Y":
+    continue_game = raw_input('>>').lower()
+    if continue_game == "y":
         return stop
-    elif continue_game == "N":
+    elif continue_game == "n":
         print "OK!"
         exit()
     else:
@@ -597,11 +601,12 @@ def score_command(stop):
 
 def load_command(stop):
     games = os.listdir("save")
-    try:
-        for i, file_name in enumerate(games): #prints the players to console
-            if file_name.split(".")[1]=='.xml':
-                print str(i) + "\t" + file_name.split(".")[0]
-
+    ct=0
+    for i, file_name in enumerate(games): #prints the players to console
+        if file_name.split(".")[1]=='.xml':
+            print str(i) + "\t" + file_name.split(".")[0]
+            ct+=1
+    if ct>0:
         print "Choose a game by its number, or type new for new game.\n"
         choice = raw_input(">>").lower()
         if choice not in [ "n", "new"]:
@@ -612,12 +617,11 @@ def load_command(stop):
                 print "You didn't give a proper number..."
                 game_file = 'game.xml'
             return load_game(game_file)
-    except:
+
+    else:
         print "\n\t\tCould not find any saved games!"
         print "\n\t\tType start or exit!"
         return stop
-
-    return
 
 def load_game(game_file):
     '''
