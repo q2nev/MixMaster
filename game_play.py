@@ -1,7 +1,6 @@
 import game
 import twitter as TW
 import ascii as ASC
-import commands as CMD
 import msvcrt
 import os
 import time
@@ -16,15 +15,8 @@ mix.init()
 logging.basicConfig(filename='game_play.log',logging=logging.DEBUG)
 
 stops = dict()
-stops = dict()
-challenges = dict()
-finds = dict()
-sounds= dict() # keep track of which sounds have been played
-fights= dict()
 current_sound = None
 g_map = None
-
-followers = 10
 rhymes = 20
 ats = 20
 desc_ct = 0
@@ -83,9 +75,9 @@ def describe(stop,extras):
         if 'stop_desc' in extras:
             print stop.desc[desc_ct].value
         if 'ascii' in extras:
-            image_to_ascii(stop,False)
-        if 'ascii_w_sound' in extras:
-            image_to_ascii(stop,True)
+            image_to_ascii(stop)
+        if 'ascii_animate' in extras:
+            print_animation(stop)
         if 'pause_music' in extras:
             play_music(stop,True)
         if 'play_music' in extras:
@@ -101,7 +93,7 @@ def describe(stop,extras):
                     print "__________________________________________________________"
         if 'results' in extras:
             print "After that game you have",rhymes, "rhymes, and",ats,"Ats."
-            print "You also have", followers,"Followers."
+            # print "You also have", followers,"Followers."
         if 'inventory' in extras:
             print "Rhymes:", rhymes
             print "__________________________________________________________"
@@ -144,7 +136,6 @@ def image_to_ascii(stop,pause_sound=False, guess_name=False):
                 print l
     else:
         ascii_string = ASC.image_diff('images/'+img)
-        print type(ascii_string)
         fin = open('images/'+img_txt,'w')
         print "file opened"
         for i in range(len(ascii_string)):
@@ -239,7 +230,6 @@ def process_command(stop, command): #can also pass stop!
     Output: global extras and global stop.
     '''
     global desc_ct
-    global finds
     global rhymes
     global ats
     global extras
@@ -309,6 +299,77 @@ def enter_command(stop,descs):
     extras = ['stop_desc']
     return stop
 
+
+
+def descs_dict(stop): #can also pass place and will have same result
+    descs = dict()
+    desc_ct = 0
+    for d in stop.desc:
+        descs[desc_ct] = d.value
+        desc_ct+=1
+    return descs
+
+def parse(cmd):
+    cmd = one_word_cmds.get(cmd, cmd)
+    print cmd
+    words = cmd.split()
+    verb = words[0]
+    verb = translate_verb.get(verb, "BAD_VERB")
+    noun = " ".join(words[1:])
+    noun = translate_noun.get(noun, noun)
+    return verb, noun
+
+def ascii_challenge(stop):
+    '''
+    separate image_to_ascii function to have guessing game.
+    image_folder: where the images are stored
+    (All images need to have 3-letter formats a.k.a. .jpegs won't work)
+    img: string from stop.attrs
+    img_txt: possible text string that would've already been generated
+    '''
+    global rhymes
+    global ats
+    global current_sound
+    image_folder = os.listdir('images/')
+    img = str(stop.attrs["im"]).strip(string.whitespace)
+    img_txt = img[:-4]+'.txt'
+    logging.debug("Image Text:",img_txt) #log image text for debugging
+    play_ascii(stop)
+    boss = str(stop.attrs["kw"]).strip(string.whitespace)
+
+    if img_txt not in image_folder: #convert image to txt file if not already.
+        print "Converting jpg to txt!"
+        ascii_string = ASC.image_diff('images/'+img)
+        fin = open('images/'+img_txt,'w')
+        print "file opened"
+        for i in range(len(ascii_string)):
+            fin.write(ascii_string[i]+'\t')
+        fin.close()
+    with open('images/'+img_txt) as f:
+        lines = f.read()
+        print "Guess ascii by pressing enter!"
+        for l in lines.split('\t'):
+            while not msvcrt.kbhit():
+                time.sleep(1.2)
+                break
+            print l
+            while msvcrt.kbhit():
+                current_sound.stop()
+                msvcrt.getch()
+                print "_________________________________________________________________"
+                print "What's your guess?"
+                print boss
+                boss_guess = raw_input(">>")
+                if boss_guess == boss:
+                    current_sound.play()
+                    print "You guessed right! Here are 5 hashes and ats for your prowess!"
+                    rhymes += 5
+                    ats += 5
+                    return rhymes, ats
+                else:
+                    play_music(stop,False)
+    return rhymes,ats
+
 def go_command(stop,noun):
     global desc_ct
     global extras
@@ -356,8 +417,8 @@ def take_command(stop,noun):
     try:
         for itm in stop.item:
             access = str(itm.attrs["access"])
-            print access
-            print type(access)
+            logging.info('access:',access)
+            logging.info('access type:',type(access))
             if itm.attrs.get("nomen") == noun:
                 if access.split(',')[0] =='cost':
                     rhymes_cost= int(access[1])
@@ -447,7 +508,7 @@ def save_command(stop):
     player.attrs["stop"] = str(stop_nomen)
     player.attrs["rhymes"] = rhymes
     player.attrs["ats"]= ats
-    player.attrs["followers"] = followers
+    # player.attrs["followers"] = followers
 
     save_file = raw_input("enter a name for the save file>")
     with open("save\\" + save_file + ".xml", "w+") as f:
@@ -567,75 +628,24 @@ def load_ats_rhymes(game_file):
     logging.info('Leaving load_ats_rhymes')
     return ats,rhymes
 
-def descs_dict(stop): #can also pass place and will have same result
-    descs = dict()
-    desc_ct = 0
-    for d in stop.desc:
-        descs[desc_ct] = d.value
-        desc_ct+=1
-    return descs
-
-def parse(cmd):
-    cmd = one_word_cmds.get(cmd, cmd)
-    print cmd
-    words = cmd.split()
-    verb = words[0]
-    verb = translate_verb.get(verb, "BAD_VERB")
-    noun = " ".join(words[1:])
-    noun = translate_noun.get(noun, noun)
-    return verb, noun
-
-def ascii_challenge(stop):
-    '''
-    separate image_to_ascii function to have guessing game.
-    image_folder: where the images are stored
-    (All images need to have 3-letter formats a.k.a. .jpegs won't work)
-    img: string from stop.attrs
-    img_txt: possible text string that would've already been generated
-    '''
-    global rhymes
-    global ats
-    global current_sound
-    image_folder = os.listdir('images/')
-    img = str(stop.attrs["im"]).strip(string.whitespace)
-    img_txt = img[:-4]+'.txt'
-    logging.debug("Image Text:",img_txt) #log image text for debugging
-    play_ascii(stop)
-    boss = str(stop.attrs["kw"]).strip(string.whitespace)
-
-    if img_txt not in image_folder: #convert image to txt file if not already.
-        print "Converting jpg to txt!"
-        ascii_string = ASC.image_diff('images/'+img)
-        print type(ascii_string)
-        fin = open('images/'+img_txt,'w')
-        print "file opened"
-        for i in range(len(ascii_string)):
-            fin.write(ascii_string[i]+'\t')
-        fin.close()
-    with open('images/'+img_txt) as f:
-        lines = f.read()
-        print "Guess ascii by pressing enter!"
-        for l in lines.split('\t'):
-            while not msvcrt.kbhit():
-                time.sleep(1.2)
-                break
-            print l
-            while msvcrt.kbhit():
-                current_sound.stop()
-                msvcrt.getch()
-                print "_________________________________________________________________"
-                print "What's your guess?"
-                print boss
-                boss_guess = raw_input(">>")
-                if boss_guess == boss:
-                    current_sound.play()
-                    print "You guessed right! Here are 5 hashes and ats for your prowess!"
-                    rhymes += 5
-                    ats += 5
-                    return rhymes, ats
-                else:
-                    play_music(stop,False)
-    return rhymes,ats
+def print_animation(stop):
+    ims = dict()
+    for i in g_map.ascii[0].im:
+        nomen = i.attrs["nomen"]
+        ims[nomen] = i
+    im_name = stop.attrs["im"]
+    ct =0
+    i = ims[im_name]
+    pts = dict()
+    for pt in i.part:
+        pts[ct]=pt
+        ct+=1
+    ct=0
+    while ct in pts:
+        print pts[ct].value
+        time.sleep(.2)
+        ct+=1
+        os.system('cls')
 
 translate_verb = {"g" : "go","go" : "go","walk" : "go","jump" : "go",
                   "t" : "take", "take" : "take","grab" : "take","get":"take",

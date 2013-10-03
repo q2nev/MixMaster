@@ -1,13 +1,18 @@
 <game>
-    <player stop="start" rhymes="20" ats="20" hollers="2" lifelines="10">
+    <player stop="start" rhymes="20" ats="20" followers="10">
         <item nomen="how" access="">
             <desc>
-       -"describe around" will describe the things that you can touch currently on your stop.
-       -Otherwise you can ask for your inventory of hash and holler-ats.
-       -Current Stop
-       -Also, you can relay your past Twitter Conquests!
+       General Moves that you can make:
 
-      Game Play:
+       -"describe around" will describe the things that you can touch currently on your stop.
+
+       -"describe _____" will tell you more about that item that is near you. But watch out!
+
+           -> By asking to describe an item you could enter a Twitter or Trivia challenge!
+
+       -"current" will relay your inventory of stuff!
+
+       Game Play:
         -Earn @s and #s in the shortest amount of time possible.
 
         -Typing load- allows you to load previous games.
@@ -722,7 +727,10 @@
 
     </scenario>
     <ascii>
-        <im nomen="die">
+        <im nomen="intro">
+
+        </im>
+        <im nomen="death">
             <part>
 
                           .-----------------TTTT_-----_______
