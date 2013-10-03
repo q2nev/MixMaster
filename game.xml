@@ -162,7 +162,12 @@
     <stop nomen="start" im="chicken.jpg" sd="familyaffair.ogg">
         <desc nomen="start">
 
-            Growing up in Yonkers, you are outside your parents' apartment in Yonkers.
+
+
+
+            You grew up in North Bronx near Yonkers
+
+            and you are outside your parents' apartment in Yonkers.
 
             They are pretty close to the subway, and you need to make it to Brooklyn.
 
@@ -237,8 +242,14 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="parkchester" im="dmx.jpg" kw="bling" sd="canudigit.ogg" access="">
+    <stop nomen="parkchester" im="dmx.jpg" kw="bling" sd="feels.ogg" access="">
         <desc>
+             ____            _        _               _
+            |  _ \ __ _ _ __| | _____| |__   ___  ___| |_ ___ _ __
+            | |_) / _` | '__| |/ / __| '_ \ / _ \/ __| __/ _ \ '__|
+            |  __/ (_| | |  |   | (__| | | |  __/\__ \ ||  __/ |
+            |_|   \__,_|_|  |_|\_\___|_| |_|\___||___/\__\___|_|
+
             This is our first subway station. Welcome to the Bronx! bitch.
             You can hustle, but you're on the clock!
         </desc>
@@ -278,7 +289,14 @@
     </stop>
     <stop nomen="express" fights="true">
         <desc nomen="express">
-            You're on 6 express!
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
         </desc>
         <place nomen ="huntspoint" link="huntspoint" dir= "off" fights="true" access="cost,1,1">
             <desc>
@@ -341,6 +359,14 @@
     </stop>
     <stop nomen="express2" >
         <desc nomen="express2" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
 
         </desc>
         <desc>
@@ -367,11 +393,15 @@
             </desc>
         </item>
     </stop>
-
-
     <stop nomen="3av" im="" sd="breakyaneck.ogg" access="">
         <desc>
-            You're at the 3rd Avenue Station.
+         ______          __   _______
+        |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
+        |__    ||   _|  _  | |       ||  |  |  -__|     |  |  |  -__|
+        |______||__| |_____| |___|___| \___/|_____|__|__|_____|_____|
+
+                     You're at the 3rd Avenue Station.
+
         </desc>
         <desc>
             You can get back on the
@@ -410,7 +440,14 @@
     </stop>
     <stop nomen="express3" >
         <desc nomen="express3" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
+                        You're on the 4,5,6 express!
         </desc>
         <desc>
 
@@ -500,6 +537,14 @@
     </stop>
     <stop nomen="express4" >
         <desc nomen="express4" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
 
         </desc>
         <desc>
@@ -547,6 +592,14 @@
     </stop>
     <stop nomen="express5" >
         <desc nomen="express5" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
 
         </desc>
         <desc>
@@ -589,7 +642,14 @@
     </stop>
     <stop nomen="express6" >
         <desc nomen="express6" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
+                        You're on the 4,5,6 express!
         </desc>
         <desc>
 
@@ -639,6 +699,14 @@
     </stop>
     <stop nomen="express7">
         <desc nomen="express7" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
 
         </desc>
         <desc>
@@ -699,6 +767,14 @@
     </stop>
     <stop nomen="express8">
         <desc nomen="express8" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
 
         </desc>
         <desc>
@@ -726,10 +802,10 @@
         </item>
     </stop>
     <stop nomen="fulton street" im="" sd="" access="">
-        <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
+        <desc nomen="fulton street" dir="off" link="express" im="harlem.jpg">
 
         </desc>
-        <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
+        <desc nomen="fulton street" dir="off" link="express" im="harlem.jpg">
 
         </desc>
         <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
@@ -782,7 +858,14 @@
     </stop>
     <stop nomen="express9">
         <desc nomen="express9" >
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
 
+                        You're on the 4,5,6 express!
         </desc>
         <desc>
 
@@ -888,6 +971,15 @@
     </stop>
     <stop nomen="express10">
         <desc nomen="express10" >
+
+                __   ____   _     ___     ___        ___       ___       __
+        \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
+         |  (__    \  \/  /  |  |  ) |  |  )  |  (__   (  (___   (  (___
+         |   __)    |    |   |  __/  |    /   |   __)   \___  \   \___  \
+         |  (___   /  /\  \  | |     | |\ \   |  (___   ____)  )  ____)  )
+        /       )_/  /__\  \_| |_____| |_\ \_/       )_(      (__(      (__
+
+                        You're on the 4,5,6 express!
 
         </desc>
         <desc>
@@ -1109,7 +1201,7 @@
 
             </part>
             <part>
-                
+
             </part>
 
         </im>
