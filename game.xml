@@ -715,7 +715,7 @@
             Upper East Side!
             </desc>
         </place>
-        <item nomen="old lady" kw="bitch" access="">
+        <item nomen="old lady" fights="true" kw="bitch" access="">
             <desc>
             A little old lady is clutching her purse!
             </desc>
@@ -726,7 +726,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="86th street" sd="">
+    <stop nomen="86th street" sd="talib.ogg" im="talib.jpg" kw="talib">
         <desc>
          __  __  ____  ____  ____  ____    ____    __    ___  ____
         (  )(  )(  _ \(  _ \( ___)(  _ \  ( ___)  /__\  / __)(_  _)
@@ -807,7 +807,7 @@
         </place>
         <item nomen="businessman" fights="true" kw="watch" access="">
             <desc>
-
+            There is a businessman next to you holding a watch.
             </desc>
         </item>
         <item nomen="middle schooler" fights="true" kw="homework" access="">
@@ -846,7 +846,7 @@ l___,_jl__j\_jl__j__jl__j__jl_____j     \____jl_____jl__j__j  l__j  l__j\_jl__j_
             Express Train is Here.
             </desc>
         </place>
-        <item nomen="gaggle of bums" kw="gaggle" access="">
+        <item nomen="gaggle of bums" kw="gaggle" fights="true" access="">
             <desc>
             There is a gaggle of bums that are panhandling.
             </desc>
@@ -878,12 +878,12 @@ l___,_jl__j\_jl__j__jl__j__jl_____j     \____jl_____jl__j__j  l__j  l__j\_jl__j_
 
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" access="">
+        <item nomen="vegetable man" kw="hairy" fights="true" access="">
             <desc>
-
+            There's a man trying to sell cabbage on this train.
             </desc>
         </item>
-        <item nomen="ak" access="cost,1,1">
+        <item nomen="bat" fights="true" kw="bat" access="cost,1,1">
             <desc>
                 Even when you lose, it feels good to win!
             </desc>
@@ -933,15 +933,15 @@ l___,_jl__j\_jl__j__jl__j__jl_____j     \____jl_____jl__j__j  l__j  l__j\_jl__j_
         </place>
         <place nomen="bleeker street" link="bleeker street">
             <desc>
-
+            The Bleeker Street Stop is next
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" access="">
+        <item nomen="simon" kw="paul" fights="true" access="">
             <desc>
 
             </desc>
         </item>
-        <item nomen="ak" access="cost,1,1">
+        <item nomen="garfunkel" kw="art" fights="true" access="cost,1,1">
             <desc>
                 Even when you lose, it feels good to win!
             </desc>
@@ -1052,7 +1052,7 @@ l___,_jl__j\_jl__j__jl__j__jl_____j     \____jl_____jl__j__j  l__j  l__j\_jl__j_
 
         </place>
     </stop>
-    <stop nomen="wall street" im="money.jpg" sd="wall_street.wav" access="">
+    <stop nomen="wall street" im="Xzibit.jpg" sd="wall_street.wav" kw="xzibit" access="">
         <desc nomen="">
             Welcome to Wall Street!
         </desc>
