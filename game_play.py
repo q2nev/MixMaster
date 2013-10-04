@@ -9,6 +9,7 @@ import pygame.mixer as mix
 import string
 import sys
 import Q2logging
+import pyfiglet
 
 mix.init()
 logging.basicConfig(filename='game_play.log',logging=logging.DEBUG)
@@ -50,6 +51,7 @@ def main():
     os.system('cls')
     # enter main game loop
     while True:
+        print_stop_text(stop)
         describe(stop, extras)
         command = raw_input(">>").lower()
         os.system('cls') #clearing for better user experience
@@ -57,6 +59,9 @@ def main():
         stop = process_command(stop, command)
         logging.info('Command Processed')
         logging.info(str(type(stop))) #make sure that we're passing in variable into loop!
+
+def print_stop_text(stop):
+    pass
 
 def describe(stop,extras):
     '''
@@ -87,30 +92,31 @@ def describe(stop,extras):
             for p in stop.place:
                     print "\n\t"+"Name for place:", p.attrs.get("nomen")+".", "Direction for place:", p.attrs.get("dir")
                     print "\n\t"+"Place description:", str(p.desc[0].value).strip(string.whitespace)
-                    print "_________________________________________________________"
+                    print "\t\t_________________________________________________________"
             for i in stop.item:
                     print "\n\t"+"Name for item:", i.attrs.get("nomen")+".", "Direction for place:", i.attrs.get("dir")
                     print "\n\t"+"Item description:", str(i.desc[0].value).strip(string.whitespace)
-                    print "__________________________________________________________"
+                    print "\t\t__________________________________________________________"
         if 'results' in extras:
             print "After that game you have",rhymes, "rhymes, and",ats,"Ats."
             # print "You also have", followers,"Followers."
         if 'inventory' in extras:
-            print "Rhymes:", rhymes
+            print "\t\tRhymes:", rhymes
             print "\t\t__________________________________________________________"
-            print "Ats:",ats
+            print "\t\tAts:",ats
             print "\t\t__________________________________________________________"
             for itm in g_map.player[0].item:
                 print str(itm.attrs["nomen"]).upper()
-                print "Uses:"
+                print "\t\tUses:"
                 try:
                     for use in itm.usage:
-                        print use.attrs["nomen"]
+                        print "\t\t",use.attrs["nomen"]
                 except:
-                    print "No uses..."
-            print "\t\t__________________________________________________________"
-        if 'ascii_challenge' in extras:
-            pass
+                    print "\t\tNo uses..."
+                print "\t\t__________________________________________________________"
+
+        if '\t\tascii_challenge' in extras:
+            return(ascii_challenge(stop))
 
 
         if 'unknown' in extras:
@@ -194,7 +200,7 @@ def twitter_data(stop,boss, noun):
                     continue
     except:
         print "You have over exerted Twitter!"
-        ascii_challenge(stop)
+        rhymes,ats = ascii_challenge(stop)
     return rhymes,ats #returns to
 
 def twitter_battle(call_prompt, boss): # add on followers and amt later
@@ -366,7 +372,7 @@ def ascii_challenge(stop):
                 print "What's your guess?"
                 print boss
                 boss_guess = raw_input(">>")
-                if boss_guess == boss:
+                if boss_guess[:2] == boss[:2]:
                     play_music(stop)
                     print "You guessed right! Here are 5 hashes and ats for your prowess!"
                     rhymes += 5
@@ -383,13 +389,15 @@ def go_command(stop,noun):
     global rhymes
     global ats
     for pl in stop.place:
-        if noun in pl.attrs.get("nomen"):
+        if noun =="outside":
+            exit()
+        elif noun in pl.attrs.get("nomen"):
             access = str(pl.attrs["access"])
             if access.split(',')[0] == "cost":
                 rhymes_cost= int(access.split(',')[1])
                 ats_cost = int(access.split(',')[2])
                 print "\n\n\t\t\t\tDo you want to pay for this? (y/n)?"
-                print "\t\t\t",rhymes_cost,"rhymes"
+                print "\t\t\t",rhymes_cost,"Rhymes"
                 print "\t\t\t",ats_cost,"Ats"
                 pay_cost = raw_input('>>')
                 if pay_cost.lower() == 'y':
@@ -410,7 +418,7 @@ def go_command(stop,noun):
                     print "Well that's ok?"
             for itm in player.item:
                 if str(itm.attrs['nomen'])==access:
-                    print '\t\t\n\nYou have a',access, 'To gain access to this stop. Use your',access,'?'
+                    print '\t\t\n\nYou have a',access, 'To gain access to this stop. Use your',access,'? (Y/N)'
                     access_q = raw_input('>>')
                     if access_q.lower() == "y":
                         extras =['stop_name','stop_desc','pause_music','play_music']
@@ -501,8 +509,8 @@ def describe_command(stop, player, noun):
             if itm.attrs["fights"]=="true":
                 rhymes, ats = twitter_data(stop,boss, noun)
                 extras= ["rhymes", "ats", "battle_results"]
-                print "You now have", rhymes,"rhymes in your rep!"
-                print "And",ats, "holler-ats from the crowd!"
+                print "\t\t\tYou now have", rhymes,"rhymes in your rep!"
+                print "\t\t\tAnd",ats, "holler-ats from the crowd!"
 
                 player.item.append(itm)
                 player.children.append(itm)
@@ -522,6 +530,7 @@ def describe_command(stop, player, noun):
 
     for pl in stop.place:
         if pl.attrs.get("nomen")==noun:
+            print pl.desc[0].value
             extras= ['describe_place', 'describe_access']
             return stop
     extras = ['unknown']
@@ -728,7 +737,7 @@ one_word_cmds = {"n" : "describe n","s" : "describe s","e" : "describe e","w" : 
                  "on":"describe on",
                  "l":"load game","load":"load game",
                  "current": "describe around","now": "describe around","around":"describe around","describe":"describe around",
-                 "i":"cur inventory","h":"cur inventory",
+                 "i":"cur inventory","h":"cur inventory","inventory":"cur inventory",
                  "rules":"how to","how":"how to","help":"how to",
                  "next": "go start","begin":"go start","start":"go start",
                  "score":"score board",

@@ -22,9 +22,11 @@
         -If you look at someone, you might have to start a twitter battle with them!
          Here, if you don't choose your call and word wisely they can steal your hash or @s.
 
-         A twitter battle takes a bosses keyword and puts it against yours!
-         The quickest tongue with the most popularity takes the other's
-         holler-ats and hash.
+         Generally the goal of the game is to
+
+                a.) survive the game and
+
+                b.) have the most @s and #s acquired by the end of the game
 
             </desc>
         </item>
@@ -50,7 +52,7 @@
             </usage>
         </item>
     </player>
-    <stop nomen="intro" sd="good_ass_intro.ogg" im="chicken.jpg" access="">
+    <stop nomen="intro" sd="good_ass_intro.ogg" im="chance-the-rapper.jpg" kw="chance" access="">
         <desc nomen="intro" >
  ****     ****   **  **     **      ****     ****       **       ******** **********  ********  *******
 /**/**   **/**  /** //**   **      /**/**   **/**      ****     **////// /////**///  /**/////  /**////**
@@ -159,7 +161,7 @@
             </desc>
         </place>
     </stop>
-    <stop nomen="start" im="chicken.jpg" sd="familyaffair.ogg">
+    <stop nomen="start" im="mary.jpg" kw="mary" sd="familyaffair.ogg">
         <desc nomen="start">
 
            d888888o. 8888888 8888888888   .8.          8 888888888o. 8888888 8888888888
@@ -185,6 +187,7 @@
         </desc>
         <desc nomen="start">
 
+
             Are you really that curious to figure more about the start of this game?
 
             Time's a wasting!
@@ -192,12 +195,76 @@
             There aren't many options here, so choose wisely!
 
         </desc>
+        <desc nomen="intro" >
+
+                Having a rough, young life in the heart of the Bronx.
+
+            All you've ever wanted for yourself is to make it as the hottest.
+
+                            MOST BADASS MC OF ALL TIME.
+
+                Toughest market in the United States right here.
+
+            In order to work your way up the ranks, you have to make it to
+
+       Brooklyn on the 4,5,6 train unscathed and with more hash then you started with.
+
+        </desc>
+        <desc nomen ="intro">
+            Along the way, you'll meet some characters who will challenge your wit
+
+             and try to steal your reputation (also called holler-ats or @s)
+
+                and stash (also called rhymes, hashtags and #s), but fear not!
+
+                You're a mean muggin' thug, and you know the Twittersphere.
+        </desc>
         <desc>
+            Whenever a person, place or thing decides to give you a glare,
+
+          You must challenge the boss with your own gang call and holler-count.
+
+            Your holler-count is the amount of defeats you have already
+
+        </desc>
+        <desc nomen="intro">
+        Along the subway, you can decide to trade your life of crime for a life as an MC.
+
+            That is the reason the Dom Bros decided to recruit you in the first place.
+
+            You've got fly tunes and you know how to spin.
+
+        </desc>
+        <desc nomen="start" >
+
+                    If you run into another MC on the tracks,
+
+                You can increase your holler-ats by pressing enter
+
+        And guessing the currently playing MC before your time expires.
+        </desc>
+        <desc >
+                           As far as the basics:
+
+            To learn more about game play type "how" and enter
+
+               For more info on current stop -- type enter.
+
+            To learn more about your surroundings -- type "describe around".
+
+      To challenge or check something out -- type "glare" followed by its name!
+
+       If you've saved your game previously, you can "load" the previous game.
+
+       </desc>
+       <desc>
 
 
             They pressed enter again... must be pretty desperate at this point....
 
-        </desc>
+            How about you try typing "how" to learn more about the game?
+
+       </desc>
         <place nomen="subway" link="parkchester" access="ticket">
             <desc nomen="subway">
                 You need a ticket to get on the subway!!
@@ -222,7 +289,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="kiosk" sd="pusherman.ogg">
+    <stop nomen="kiosk" im="curtis.jpg" sd="pusherman.ogg" kw="curtis">
         <desc>
 
         ____   __    ____     _____     ______  ____  ____
@@ -308,7 +375,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express" im="cadillac.jpg" kw="fast" sd="logic.ogg" fights="true">
+    <stop nomen="express" im="logic.jpg" kw="logic" sd="logic.ogg" fights="true">
         <desc nomen="express">
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -321,11 +388,18 @@
         </desc>
         <desc>
 
+            You are on the express between Parkchester and Huntspoint.
+
+            There are a lot of people on the train,
+
+            But let's be real there are only a few people that are reall too important
+
+            The bloods and the crips
 
         </desc>
         <place nomen ="huntspoint" link="huntspoint" dir= "off" fights="true" access="cost,1,1">
             <desc>
-
+            This is the next stop on the train!
             </desc>
         </place>
         <item nomen="crips" kw="blue" dir="" fights="true" access="">
@@ -340,7 +414,7 @@
         </item>
     </stop>
 
-    <stop nomen="huntspoint" im="chicken.jpg" sd="pusherman.ogg" kw="curtis">
+    <stop nomen="huntspoint" im="curtis.jpg" sd="pusherman.ogg" kw="curtis">
         <desc>
 
                 ___    _    ___    _     ___    __        ___       __
@@ -369,11 +443,11 @@
             in many cases for its crime and prostitution
 
         </desc>
-        <place nomen="chicken" dir="ground" fights="true" access="">
+        <item nomen="chicken" dir="ground" fights="true" access="">
             <desc>
 
             </desc>
-        </place>
+        </item>
         <place nomen="express" link="express2" fights="challenge" access="">
             <desc>
                 Express is here.
@@ -394,7 +468,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express2" im="chicken.jpg">
+    <stop nomen="express2" im="dangelo.jpg" sd="dangelo.ogg" kw="d'angelo">
         <desc nomen="express2" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -408,29 +482,35 @@
         </desc>
         <desc>
 
+            You're on the second leg of the express!
+
+            It's a party out there,
+
+            but you gotta make it to the BK!
+
         </desc>
         <place nomen="outside" link="outside"  access="">
             <desc>
 
             </desc>
         </place>
-        <place nomen="3av" link="3av" access="">
+        <place nomen="3av" link="3av" access="cost,1,1">
             <desc>
 
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" fights="" access="">
+        <item nomen="sweaty man" kw="hairy" fights="true" access="">
             <desc>
 
             </desc>
         </item>
-        <item nomen="ak" kw="gun" fights="" access="cost,1,1">
+        <item nomen="ak" kw="gun" fights="true" access="cost,1,1">
             <desc>
                 Even when you lose, it feels good to win!
             </desc>
         </item>
     </stop>
-    <stop nomen="3av" im="dmx.jpg" sd="breakyaneck.ogg" access="">
+    <stop nomen="3av" im="tyler.jpg" sd="tyler.ogg" kw="tyler" access="">
         <desc>
          ______          __   _______
         |__    |.----.--|  | |   _   |.--.--.-----.-----.--.--.-----.
@@ -442,6 +522,19 @@
         </desc>
         <desc>
             You can get back on the Express... we're still in the Bronx
+        </desc>
+        <desc>
+            Third Avenue is a north-south thoroughfare on the East Side of the New York City borough of Manhattan,
+
+            Running from Cooper Square north for over 120 blocks.
+
+            The street leaves Manhattan and continues into The Bronx across the Harlem River
+
+            over the Third Avenue Bridge north of East 129th Street to East Fordham Road at Fordham Center.
+
+            It is one of the four streets that form The Hub,
+
+            a site of both maximum traffic and architectural density, in the South Bronx
         </desc>
         <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
             <desc>
@@ -469,7 +562,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express3" im="chicken.jpg" sd="breakyaneck.ogg" kw="busta">
+    <stop nomen="express3" im="busta.jpg" sd="breakyaneck.ogg" kw="busta" access="">
         <desc nomen="express3" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -488,27 +581,60 @@
 
             </desc>
         </place>
-        <place nomen="125th Street" link="125th St" access="">
+        <place nomen="125th Street" link="125th St" access="cost,1,1">
             <desc>
 
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" access="">
+        <item nomen="angry mom" kw="hairy" fights="true" access="">
             <desc>
+            You keep cursing in the subway!?
 
+            Shame on you!
             </desc>
         </item>
-        <item nomen="ak" access="cost,1,1">
+        <item nomen="ak" fights="" access="cost,1,1">
             <desc>
                 Even when you lose, it feels good to win!
             </desc>
         </item>
     </stop>
-    <stop nomen="125th St" dir="off" link="express" im="harlem.jpg" access="">
-        <desc nomen="125th St" dir="off" link="express" im="harlem.jpg">
+    <stop nomen="125th St" dir="off" link="express" im="fatjoe.jpg" sd="fatjoe.ogg" kw="fat" access="">
+        <desc nomen="125th St" >
+                 _   _            _
+                | | | | __ _ _ __| | ___ _ __ ___
+                | |_| |/ _` | '__| |/ _ \ '_ ` _ \
+                |  _  | (_| | |  | |  __/ | | | | |
+                |_| |_|\__,_|_|  |_|\___|_| |_| |_|
 
         </desc>
-        <desc nomen="125th St" dir="off" link="express" im="harlem.jpg">
+        <desc nomen="125th St" >
+         _ ____  ____  _   _       ____  _                 _
+        / |___ \| ___|| |_| |__   / ___|| |_ _ __ ___  ___| |_
+        | | __) |___ \| __| '_ \  \___ \| __| '__/ _ \/ _ \ __|
+        | |/ __/ ___) | |_| | | |  ___) | |_| | |  __/  __/ |_
+        |_|_____|____/ \__|_| |_| |____/ \__|_|  \___|\___|\__|
+
+        </desc>
+        <desc>
+
+
+        Harlem is a large neighborhood within the northern section of the New York City borough of Manhattan.
+
+        Since the 1920s, Harlem has been known as a major African-American residential,
+
+        cultural and business center.
+
+         </desc>
+        <desc>
+
+            Originally a Dutch village, formally organized in 1658,
+
+            it is named after the city of Haarlem in the Netherlands.
+
+            Harlem's history has been defined by a series of economic boom-and-bust cycles,
+
+            with significant population shifts accompanying each cycle
 
         </desc>
         <place nomen="tracks" dir="now" link="tracks" fights="true" im="bearded_bum.jpg" sd="green_eyes.ogg" access="">
@@ -527,7 +653,7 @@
 
             </desc>
         </place>
-        <item nomen="westchester">
+        <item nomen="westchester" dir="front" fights="true" kw="dollars">
             <desc nomen="westchester" desc_type="intro">
                 There is a business-man from Westchester. He has a long overcoat
             </desc>
@@ -535,7 +661,7 @@
 
             </desc>
         </item>
-        <item nomen="pigeon" dir="up" fights="true" kw="bird" im="" sd="" access="">
+        <item nomen="pigeon" dir="up" fights="true" kw="bird" access="">
             <desc nomen="pigeon">
                 You see a dirty, dirty pigeon with ruffled feathers and a bad attitude.
             </desc>
@@ -566,7 +692,7 @@
 
         </item>
     </stop>
-    <stop nomen="express4" >
+    <stop nomen="express4" kw="biggie" im="biggie.jpg" sd="big.ogg">
         <desc nomen="express4" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -579,6 +705,9 @@
 
         </desc>
         <desc>
+            You're on the way to the upper east side from Harlem.
+
+            How excited are you?!?!
 
         </desc>
         <place nomen="outside" link="outside"  access="">
@@ -588,12 +717,12 @@
         </place>
         <place nomen="86th street" link="86th street" access="">
             <desc>
-
+            Upper East Side!
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" access="">
+        <item nomen="old lady" kw="bitch" access="">
             <desc>
-
+            A little old lady is clutching her purse!
             </desc>
         </item>
         <item nomen="ak" fights="true" kw="saddam" access="cost,1,1">
@@ -602,11 +731,32 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="86th street">
+    <stop nomen="86th street" sd="">
         <desc>
+         __  __  ____  ____  ____  ____    ____    __    ___  ____
+        (  )(  )(  _ \(  _ \( ___)(  _ \  ( ___)  /__\  / __)(_  _)
+         )(__)(  )___/ )___/ )__)  )   /   )__)  /(__)\ \__ \  )(
+        (______)(__)  (__)  (____)(_)\_)  (____)(__)(__)(___/ (__)
 
         </desc>
         <desc>
+         ___   _  ____  _   _    ___  ____  ____  ____  ____  ____
+        ( _ ) / )(_  _)( )_( )  / __)(_  _)(  _ \( ___)( ___)(_  _)
+        / _ \/ _ \ )(   ) _ (   \__ \  )(   )   / )__)  )__)   )(
+        \___/\___/(__) (_) (_)  (___/ (__) (_)\_)(____)(____) (__)
+
+        </desc>
+        <desc>
+
+        The Upper East Side is a neighborhood in the borough of Manhattan in New York City,
+
+        between Central Park and the East River.
+
+        The Upper East Side lies within an area bounded by 59th Street to 96th Street,
+
+        and the East River to Fifth Avenue-Central Park.
+
+        The ZIP codes included in this neighborhood are 10021, 10022, 10028, 10075, 10128, 10029 and 10065.
 
         </desc>
         <place nomen="express" link="express5" access="cost,1,1">
@@ -635,23 +785,30 @@
         </desc>
         <desc>
 
+            You're back on the express! Only a few more stops to go!
+
+        </desc>
+        <desc>
+
+            You're on the way from 86th to Grand Central!
+
         </desc>
         <place nomen="outside" link="outside"  access="">
             <desc>
 
             </desc>
         </place>
-        <place nomen="grand central" link="grand central" access="">
+        <place nomen="grand central" link="grand central" access="cost,4,1">
             <desc>
 
             </desc>
         </place>
-        <item nomen="sweaty man" kw="hairy" access="">
+        <item nomen="businessman" fights="true" kw="watch" access="">
             <desc>
 
             </desc>
         </item>
-        <item nomen="ak" access="cost,1,1">
+        <item nomen="middle schooler" fights="true" kw="homework" access="">
             <desc>
                 Even when you lose, it feels good to win!
             </desc>
@@ -978,7 +1135,7 @@
             </desc>
         </place>
     </stop>
-    <stop nomen="outside brooklyn" access="">
+    <stop nomen="outside brooklyn" im="" sd="" kw="" access="">
         <desc nomen="outside brooklyn">
 
         </desc>
@@ -991,7 +1148,7 @@
             </desc>
         </place>
     </stop>
-    <stop nomen="hipsterdom" fights="true">
+    <stop nomen="hipsterdom" im="" sd="" kw="" fights="true">
         <desc nomen="hipsterdom" fights="true">
 
         </desc>
@@ -1010,7 +1167,7 @@
 
         </item>
     </stop>
-    <stop nomen="express10">
+    <stop nomen="express10" im="" sd="" kw="">
         <desc nomen="express10" >
 
                 __   ____   _     ___     ___        ___       ___       __
@@ -1070,7 +1227,7 @@
                 If you get off, you gotta fight to get back on!
             </desc>
         </place>
-        <place nomen="barclays" link="barclays">
+        <place nomen="barclays" link="barclays" access="">
             <desc>
 
             </desc>
@@ -1078,7 +1235,7 @@
         </place>
 
     </stop>
-    <stop nomen="barclays">
+    <stop nomen="barclays" im="jayz.jpg">
         <desc >
 
         </desc>
@@ -1120,37 +1277,20 @@
     </stop>
     <stop nomen="outside" link="outside" im="" sd="" access="">
         <desc nomen="endgame">
-                Death by driveby.
-        </desc>
-        <item nomen="" fights="false" access="">
 
-        </item>
-    </stop>
+                There is nothing going on out here.
 
-    <stop nomen="death" im="grimreaper.jpg" sd="" access="">
-        <desc nomen="death" access="">
-            I don't think I've ever had death taste this good. Oh my god, the fucking chicken!
-        </desc>
-        <desc nomen="death">
+                Type restart to restart the game.
+
+                Or type go death to exit!
 
         </desc>
-        <place nomen="hell" dir="d" fights="true" access="">
-            <desc nomen="hell" dir="d" fights="true" >
-
-            </desc>
-        </place>
-        <place nomen="heaven" dir="u" fights="true" access="">
-            <desc nomen="heaven" dir="u" fights="true" >
-
-            </desc>
-        </place>
-        <item nomen="" im="" sd="" access="">
-            <desc nomen="">
-
+        <item nomen="death" fights="false" access="">
+            <desc>
+                You die.
             </desc>
         </item>
     </stop>
-
     <stop nomen="local" type="paranoia">
         <desc>
             You die of paranoia.
@@ -1163,7 +1303,7 @@
     <stop nomen="" link="">
 
     </stop>
-    <stop nomen="" conclusion="">
+    <stop nomen="">
 
     </stop>
 
@@ -1261,7 +1401,7 @@
 
     </scenario>
     <ascii>
-        <im nomen="intro">
+        <im nomen="death">
             <part>
 
             </part>
@@ -1807,7 +1947,7 @@
         </part>
 
     </im>
-    <im nomen="drive by">
+    <im nomen="intro">
         <part>
 
                                                                       _/ ||                ~-_
