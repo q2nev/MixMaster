@@ -330,7 +330,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="parkchester" im="dmx.jpg" kw="bling" sd="feels.ogg" access="">
+    <stop nomen="parkchester" im="dmx.jpg" kw="dmx" sd="dmx.ogg" access="">
         <desc>
              ____            _        _               _
             |  _ \ __ _ _ __| | _____| |__   ___  ___| |_ ___ _ __
@@ -556,11 +556,6 @@
 
             </desc>
         </item>
-        <item nomen="dmx" kw="" fights="challenge" im="" sd="" access="">
-            <desc>
-
-            </desc>
-        </item>
     </stop>
     <stop nomen="express3" im="busta.jpg" sd="breakyaneck.ogg" kw="busta" access="">
         <desc nomen="express3" >
@@ -599,7 +594,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="125th St" dir="off" link="express" im="fatjoe.jpg" sd="fatjoe.ogg" kw="fat" access="">
+    <stop nomen="125th St" dir="off" link="express" im="fat-joe.png" sd="fatjoe.ogg" kw="fat" access="">
         <desc nomen="125th St" >
                  _   _            _
                 | | | | __ _ _ __| | ___ _ __ ___
@@ -762,16 +757,23 @@
         <place nomen="express" link="express5" access="cost,1,1">
             <desc>
 
+                The Express is here!!
+
             </desc>
         </place>
-        <item nomen="hype girl" access="cost,1,1">
+        <item nomen="hype girl" fights="true" kw="dude" access="cost,1,1">
             <desc>
+
                 "Yo honey, I can be the girl of your dreams!
+
+                Make you famous in all those scenes.
+
+                If you know what I mean!"
 
             </desc>
         </item>
     </stop>
-    <stop nomen="express5" >
+    <stop nomen="express5" im="mos-def.jpg" sd="mos-def.ogg" kw="mos def">
         <desc nomen="express5" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -814,21 +816,43 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="grand central">
+    <stop nomen="grand central" sd="biz.ogg" im="bizmarkie.jpg" kw="biz">
         <desc>
+  ____  ____    ____  ____   ___           __    ___  ____   ______  ____    ____  _
+ /    T|    \  /    T|    \ |   \         /  ]  /  _]|    \ |      T|    \  /    T| T
+Y   __j|  D  )Y  o  ||  _  Y|    \       /  /  /  [_ |  _  Y|      ||  D  )Y  o  || |
+|  T  ||    / |     ||  |  ||  D  Y     /  /  Y    _]|  |  |l_j  l_j|    / |     || l___
+|  l_ ||    \ |  _  ||  |  ||     |    /   \_ |   [_ |  |  |  |  |  |    \ |  _  ||     T
+|     ||  .  Y|  |  ||  |  ||     |    \     ||     T|  |  |  |  |  |  .  Y|  |  ||     |
+l___,_jl__j\_jl__j__jl__j__jl_____j     \____jl_____jl__j__j  l__j  l__j\_jl__j__jl_____j
 
         </desc>
         <desc>
+            Although the terminal has been properly called “Grand Central Terminal” since 1913,
+
+            many people continue to refer to it as “Grand Central Station,”
+
+            the name of the previous rail station on the same site,
+
+            and of the U.S. Post Office station next door, which is not part of the terminal.
+
+            It is also sometimes used to refer to the
+
+            Grand Central – 42nd Street subway station, which serves the terminal.
 
         </desc>
-        <place nomen="express" link="express6">
-
+        <place nomen="express" link="express6" access="cost,1,1">
+            <desc>
+            Express Train is Here.
+            </desc>
         </place>
-        <item nomen="" access="">
-
+        <item nomen="gaggle of bums" kw="gaggle" access="">
+            <desc>
+            There is a gaggle of bums that are panhandling.
+            </desc>
         </item>
     </stop>
-    <stop nomen="express6" >
+    <stop nomen="express6" sd="tupac.ogg" im="tupac.jpg" kw="tupac">
         <desc nomen="express6" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -840,6 +864,8 @@
                         You're on the 4,5,6 express!
         </desc>
         <desc>
+
+            You're on the way to Union Square from Grand Central!
 
         </desc>
         <place nomen="outside" link="outside"  access="">
@@ -863,7 +889,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="union square" im="needle.jpg" sd="" access="">
+    <stop nomen="union square" im="soggy.jpg" sd="union.ogg" access="" kw="union" >
         <desc nomen="alive">YOU WIN! Hop up in your hipster palace!</desc>
         <place nomen="outside" dir="u" fights="true" kw="drive" access="">
             <desc nomen="outside" dir="u" fights="true">
@@ -885,7 +911,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="express7" sd="caveman.ogg">
+    <stop nomen="express7" sd="caveman.ogg" im="caveman.jpg" kw="caveman">
         <desc nomen="express7" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -921,7 +947,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="bleeker street" im="" sd="feels.ogg" access="">
+    <stop nomen="bleeker street" im="" sd="bleeker.ogg" access="">
         <desc nomen="bleeker street" dir="off" link="express" im="harlem.jpg">
 
 
@@ -963,7 +989,7 @@
             </desc>
         </place>
     </stop>
-    <stop nomen="express8">
+    <stop nomen="express8" im="kid-cudi.jpg" sd="kid-cudi.ogg" kw="kid">
         <desc nomen="express8" >
                 __   ____   _     ___     ___        ___       ___       __
         \    ___) \  \  /  / |    \  |    \  \    ___)  )  ____)  )  ____)
@@ -999,7 +1025,7 @@
             </desc>
         </item>
     </stop>
-    <stop nomen="fulton street" im="" sd="" access="">
+    <stop nomen="fulton street" im="fiftycent.jpg" sd="fifty.ogg" access="">
         <desc nomen="fulton street" dir="off" link="express" im="harlem.jpg">
 
         </desc>

@@ -140,7 +140,7 @@ def image_to_ascii(stop,pause_sound=False, guess_name=False):
     if img_txt in image_folder:
         with open('images/'+img_txt) as f:
             lines = f.read()
-            print "Guess ascii by pressing enter!"
+            print "Guess ascii/musician/song by pressing enter!"
             for l in lines.split('\t'):
                 time.sleep(1.5)
                 print l
@@ -715,7 +715,8 @@ translate_verb = {"g" : "go","go" : "go","walk" : "go","jump" : "go",
                   "load":"load","save":"save",
                   "how":"how","help":"how",
                   "exit":"exit",
-                  "score":"score"
+                  "score":"score",
+                  "buy":"go"
                   }
 
 translate_noun = {"n": "n","north":"n",

@@ -8,8 +8,8 @@
     <file path="/ascii_animation.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380759244949" ignored="false" />
     <file path="/music.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685427592" ignored="false" />
     <file path="/thread_practice.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380685083699" ignored="false" />
-    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380907561790" ignored="false" />
-    <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380905141874" ignored="false" />
+    <file path="/game.xml" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380912248662" ignored="false" />
+    <file path="/game_play.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380912120737" ignored="false" />
     <file path="/hipsterdom.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380735769218" ignored="false" />
     <file path="/commands.py" changelist="ce29be66-f32a-46cd-a3ba-7dfef711c792" time="1380756694267" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="game_play.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_play.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="498" column="1" selection-start="17870" selection-end="17871" vertical-scroll-proportion="-9.740741">
+            <state line="712" column="93" selection-start="24736" selection-end="24736" vertical-scroll-proportion="-5.3703704">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
       <file leaf-file-name="game.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1141" column="39" selection-start="41282" selection-end="41282" vertical-scroll-proportion="0.3324905">
+            <state line="331" column="11" selection-start="12651" selection-end="12651" vertical-scroll-proportion="0.31099874">
               <folding />
             </state>
           </provider>
@@ -474,14 +474,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game_play.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="498" column="1" selection-start="17870" selection-end="17871" vertical-scroll-proportion="-9.740741">
+        <state line="712" column="93" selection-start="24736" selection-end="24736" vertical-scroll-proportion="-5.3703704">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1141" column="39" selection-start="41282" selection-end="41282" vertical-scroll-proportion="0.3324905">
+        <state line="331" column="11" selection-start="12651" selection-end="12651" vertical-scroll-proportion="0.31099874">
           <folding />
         </state>
       </provider>
